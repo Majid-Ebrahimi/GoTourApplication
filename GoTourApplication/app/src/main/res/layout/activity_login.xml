@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/text_logo"
+        style="@style/title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/enjoy_your_traveling"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/goTour_logo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/goTour_logo"
+        app:layout_constraintTop_toBottomOf="@+id/goTour_logo" />
+
+    <ImageView
+        android:id="@+id/goTour_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/go_tour_logo" />
+
+    <TextView
+        android:id="@+id/login_title"
+        style="@style/title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/login"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/goTour_logo"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/goTour_logo"
+        app:layout_constraintTop_toBottomOf="@+id/text_logo" />
+
+
+    <Button
+        android:id="@+id/SignUpButton"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/end_start_margin"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="@dimen/end_start_margin"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassword"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_email_login_layout"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="60dp"
+        android:hint="@string/email"
+        app:hintTextAppearance="@style/edittext_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_email_login"
+            style="@style/edittext_style"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_password_login_layout"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password"
+        app:hintTextAppearance="@style/edittext_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_email_login_layout"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_password_login"
+            style="@style/edittext_style"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        style="@style/link_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/forgot_password"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/SignUpButton"
+        app:layout_constraintStart_toStartOf="@+id/SignUpButton"
+        app:layout_constraintTop_toBottomOf="@+id/input_password_login_layout"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/orTextView"
+        style="@style/sub_title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/or"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/SignUpButton"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/SignUpButton"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpButton"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/login_with_google"
+        style="@style/button_with_shadow_style"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/end_start_margin"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/end_start_margin"
+        android:layout_marginBottom="50dp"
+        android:paddingStart="35dp"
+        android:paddingEnd="0dp"
+        android:text="@string/log_in_with_google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/SignUpButton"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/SignUpButton"
+        app:layout_constraintTop_toBottomOf="@+id/orTextView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/googleIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/google_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/login_with_google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/login_with_google"
+        app:layout_constraintTop_toTopOf="@+id/login_with_google"
+        app:srcCompat="@drawable/ic_google_icon" />
+
+    <TextView
+        android:id="@+id/signUpHere"
+        style="@style/link_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/sign_up_here"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/login_with_google"
+        app:layout_constraintStart_toStartOf="@+id/login_with_google"
+        app:layout_constraintTop_toBottomOf="@+id/login_with_google"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

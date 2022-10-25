@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/option"
+        android:title="@null"
+        android:icon="@drawable/ic_option"/>
+    <item
+        android:id="@+id/alarm"
+        android:title="@null"
+        android:icon="@drawable/ic_alarm"/>
+    <item
+        android:id="@+id/message"
+        android:title="@null"
+        android:icon="@drawable/ic_message"/>
+
+    <!--its space between message button and profile button -->
+    <item
+        android:id="@+id/null_button"
+        android:title="@null"
+        android:enabled="false"
+        android:icon="?attr/selectableItemBackground"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="@null"
+        android:icon="@drawable/ic_profile"/>
+
+</menu>

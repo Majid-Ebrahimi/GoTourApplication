@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ActivityMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/ProfileButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/top_margin"
+        android:layout_marginEnd="@dimen/small_end_start_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar" />
+
+    <ImageView
+        android:id="@+id/ActiveStatusImageView"
+        style="@style/online_status"
+        app:layout_constraintBottom_toBottomOf="@+id/ProfileButton"
+        app:layout_constraintEnd_toEndOf="@+id/ProfileButton"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="@+id/ProfileButton"
+        app:layout_constraintTop_toTopOf="@+id/ProfileButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/MenuButton"
+        android:layout_width="@dimen/medium_size"
+        android:layout_height="@dimen/medium_size"
+        android:layout_marginStart="@dimen/small_end_start_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:background="@drawable/pressed_background_grey"
+        app:layout_constraintEnd_toStartOf="@+id/ProfileButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <TextView
+        android:id="@+id/MainTitle"
+        style="@style/title_style"
+        android:layout_marginStart="@dimen/small_end_start_margin"
+        android:layout_marginTop="@dimen/medium_top_bottom_margin"
+        android:text="@string/get_ready"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MenuButton" />
+
+    <EditText
+        android:id="@+id/InputSearchText"
+        style="@style/search_edittext_style"
+        android:hint="@string/find_your_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainTitle" />
+
+    <Button
+        android:id="@+id/SearchButton"
+        style="@style/search_button_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/InputSearchText"
+        app:layout_constraintTop_toBottomOf="@+id/MainTitle"
+        tools:ignore="ImageContrastCheck,RedundantDescriptionCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        style="@style/bottom_navigation_style"
+        app:itemIconTint="@drawable/bottom_navigation_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputSearchText"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_navigation_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

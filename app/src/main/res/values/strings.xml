@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GoTourApplication</string>
+    <string name="splash_screen_go_tour">splash screen go tour</string>
+    <string name="stepper_image_description">first stepper image</string>
+    <string name="second_stepper_image_description">second stepper image</string>
+    <string name="third_stepper_image_description">third stepper image</string>
+    <string name="back_button_description">back button</string>
+    <string name="next_button_description">next button</string>
+    <string name="title">Title</string>
+    <string name="sub_title">Sub Title</string>
+    <string name="explore">Explore</string>
+    <string name="easy_peasy">Easy Peasy</string>
+    <string name="enjoy_tour">Enjoy Tour</string>
+    <string name="explore_sub_title">Explore your favourite destination\naround the world.</string>
+    <string name="easy_sub_title">Make your travel experience very \neasy &amp; peasy.</string>
+    <string name="enjoy_sub_title">Enjoy your favourite destination with\nyour love one.</string>
+    <string name="log_in_now">Log In Now</string>
+    <string name="login">Log In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="logo">Logo</string>
+    <string name="enjoy_your_traveling">Enjoy your traveling</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or">Or</string>
+    <string name="log_in_with_google">Log In With Google</string>
+    <string name="google_icon">Google Icon</string>
+    <string name="sign_up_here">Sign Up Here</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="terms_of_use_text">I agree and accept the terms of use.</string>
+    <string name="get_ready">Get Ready For\nThe Travel Trip!</string>
+    <string name="find_your_location">Find your location...</string>
+    <string name="search_button_description">search button description</string>
+
+</resources>

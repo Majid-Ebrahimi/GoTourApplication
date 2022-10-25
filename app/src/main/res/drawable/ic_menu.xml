@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/icons8_horizontal_line"
+    android:width="20dp"
+    android:height="20dp"
+    />
+    <item android:drawable="@drawable/icons8_horizontal_line"
+        android:width="12dp"
+        android:height="20dp"
+        android:left="0.5dp"
+        android:top="4dp"/>
+
+</layer-list>

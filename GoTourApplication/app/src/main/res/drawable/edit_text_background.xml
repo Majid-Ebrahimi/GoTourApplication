@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/pressed_background_color"/>
+            <stroke android:width="2dp"
+                android:color="@color/base_orange"/>
+            <corners android:radius="7dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_focused="false" android:state_checked="false" android:bottom="@dimen/floating_hint_margin">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+            <stroke android:width="2dp"
+                android:color="@color/border_color"/>
+            <corners android:radius="7dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_focused="false" android:state_checked="true" android:bottom="@dimen/floating_hint_margin">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+            <stroke android:width="2dp"
+                android:color="@color/base_orange"/>
+            <corners android:radius="7dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_focused="true" android:top="@dimen/floating_hint_margin" >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+            <stroke android:width="2dp"
+                android:color="@color/base_orange"/>
+            <corners android:radius="7dp"/>
+        </shape>
+    </item>
+</selector>

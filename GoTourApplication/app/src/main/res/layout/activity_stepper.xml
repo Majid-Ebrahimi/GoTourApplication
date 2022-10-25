@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".StepperActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/stepper_image"
+            style="@style/stepper_image_style"
+            android:contentDescription="@string/stepper_image_description"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/step_1" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/end_start_margin"
+            android:layout_marginEnd="@dimen/end_start_margin"
+            android:layout_marginBottom="50dp"
+            android:background="#FFFFFF"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <Button
+                android:id="@+id/back_button"
+                style="@style/button_style"
+                android:layout_width="@dimen/widget_height"
+                android:contentDescription="@string/next_button_description"
+                android:foreground="@drawable/ic_baseline_arrow_left"
+                android:visibility="invisible"
+                tools:ignore="ImageContrastCheck,RedundantDescriptionCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:id="@+id/layout_dots"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next_button"
+                style="@style/button_style"
+                android:layout_width="@dimen/widget_height"
+                android:contentDescription="@string/next_button_description"
+                android:foreground="@drawable/ic_baseline_arrow_right"
+                android:visibility="visible"
+                tools:ignore="ImageContrastCheck,RedundantDescriptionCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/log_in_button"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginStart="3dp"
+                android:text="@string/log_in_now"
+                android:visibility="gone"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/stepper_title"
+            style="@style/title_style"
+            android:layout_marginStart="@dimen/end_start_margin"
+            android:layout_marginTop="550dp"
+            android:text="@string/title"
+            android:textSize="42sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/stepper_sub_title"
+            style="@style/sub_title_style"
+            android:layout_marginStart="@dimen/end_start_margin"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/sub_title"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stepper_title"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

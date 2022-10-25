@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ActivityLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/TextLogo"
+        style="@style/title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/enjoy_your_traveling"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/GoTourLogo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/GoTourLogo"
+        app:layout_constraintTop_toBottomOf="@+id/GoTourLogo" />
+
+    <ImageView
+        android:id="@+id/GoTourLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/go_tour_logo" />
+
+    <TextView
+        android:id="@+id/LoginTitle"
+        style="@style/title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/login"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/GoTourLogo"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/GoTourLogo"
+        app:layout_constraintTop_toBottomOf="@+id/TextLogo" />
+
+
+    <Button
+        android:id="@+id/LoginButton"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/small_end_start_margin"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="@dimen/small_end_start_margin"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ForgotPassword"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/InputEmailLoginLayout"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="60dp"
+        android:hint="@string/email"
+        app:hintTextAppearance="@style/edittext_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/InputEmailLogin"
+            style="@style/edittext_style"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/InputPasswordLoginLayout"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password"
+        app:hintTextAppearance="@style/edittext_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputEmailLoginLayout"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/InputPasswordLogin"
+            style="@style/edittext_style"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/ForgotPassword"
+        style="@style/link_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/forgot_password"
+        android:textSize="13sp"
+        android:background="@drawable/link_text_background"
+        app:layout_constraintEnd_toEndOf="@+id/LoginButton"
+        app:layout_constraintStart_toStartOf="@+id/LoginButton"
+        app:layout_constraintTop_toBottomOf="@+id/InputPasswordLoginLayout"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/OrTextView"
+        style="@style/sub_title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/or"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/LoginButton"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/LoginButton"
+        app:layout_constraintTop_toBottomOf="@+id/LoginButton"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/LoginWithGoogleButton"
+        style="@style/button_with_shadow_style"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/small_end_start_margin"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/small_end_start_margin"
+        android:layout_marginBottom="@dimen/medium_top_bottom_margin"
+        android:paddingStart="35dp"
+        android:paddingEnd="0dp"
+        android:text="@string/log_in_with_google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/LoginButton"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/LoginButton"
+        app:layout_constraintTop_toBottomOf="@+id/OrTextView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/GoogleIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/google_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/LoginWithGoogleButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/LoginWithGoogleButton"
+        app:layout_constraintTop_toTopOf="@+id/LoginWithGoogleButton"
+        app:srcCompat="@drawable/ic_google_icon" />
+
+    <TextView
+        android:id="@+id/SignUpHere"
+        style="@style/link_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/sign_up_here"
+        android:textSize="13sp"
+        android:background="@drawable/link_text_background"
+        app:layout_constraintEnd_toEndOf="@+id/LoginWithGoogleButton"
+        app:layout_constraintStart_toStartOf="@+id/LoginWithGoogleButton"
+        app:layout_constraintTop_toBottomOf="@+id/LoginWithGoogleButton"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activitySignUp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/text_logo"
+        style="@style/title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/enjoy_your_traveling"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/goTour_logo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/goTour_logo"
+        app:layout_constraintTop_toBottomOf="@+id/goTour_logo" />
+
+    <ImageView
+        android:id="@+id/goTour_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/go_tour_logo" />
+
+    <TextView
+        android:id="@+id/login_title"
+        style="@style/title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/sign_up"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/goTour_logo"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/goTour_logo"
+        app:layout_constraintTop_toBottomOf="@+id/text_logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_password_signup_layout"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/password"
+        app:hintTextAppearance="@style/edittext_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender_radio_group"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_password_signup"
+            style="@style/edittext_style"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_confirm_password_signup_layout"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/confirm_password"
+        app:hintTextAppearance="@style/edittext_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_password_signup_layout"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_confirm_password_signup"
+            style="@style/edittext_style"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <RadioGroup
+        android:id="@+id/gender_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_height"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_title">
+
+        <RadioButton
+            android:id="@+id/male_radio_button"
+            style="@style/radio_button_style"
+            android:text="@string/male"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/female_radio_button"
+            style="@style/radio_button_style"
+            android:text="@string/female"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/terms_of_use_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/pressed_background"
+        android:button="@drawable/rectangle_btn_radio"
+        app:layout_constraintBottom_toBottomOf="@+id/terms_of_use_spanned_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/terms_of_use_spanned_text"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/terms_of_use_spanned_text"
+        style="@style/link_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center"
+        android:layout_marginHorizontal="@dimen/end_start_margin"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="@dimen/end_start_margin"
+        android:layout_marginEnd="@dimen/end_start_margin"
+        android:gravity="center_vertical"
+        android:text="@string/terms_of_use_text"
+        android:textColor="@color/black"
+        android:textColorLink="@color/base_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_confirm_password_signup_layout" />
+
+    <Button
+        android:id="@+id/SignUpButton"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/end_start_margin"
+        android:layout_marginTop="@dimen/end_start_margin"
+        android:layout_marginEnd="@dimen/end_start_margin"
+        android:layout_marginBottom="50dp"
+        android:enabled="false"
+        android:text="@string/sign_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terms_of_use_spanned_text"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

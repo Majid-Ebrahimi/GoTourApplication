@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="end_start_margin">15dp</dimen>
+    <dimen name="floating_hint_margin">4dp</dimen>
+    <dimen name="widget_height">45dp</dimen>
+    <dimen name="widget_padding">13dp</dimen>
+</resources>

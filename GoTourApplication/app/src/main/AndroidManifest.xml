@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.gotourapplication">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme"
+        tools:targetApi="31">
+        <!-- the activity that the user trying to SignUp -->
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <!-- the activity that the user trying to login -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <!-- the activity that the user looks at the stepper -->
+        <activity
+            android:name=".StepperActivity"
+            android:exported="false" />
+        <!-- the main activity of the application -->
+        <activity android:name=".MainActivity" />
+        <!-- the first page that the user looks at -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
