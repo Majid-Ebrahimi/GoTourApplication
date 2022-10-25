@@ -97,7 +97,7 @@
         android:id="@+id/GenderRadioGroup"
         android:layout_width="match_parent"
         android:layout_height="@dimen/widget_height"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="@dimen/medium_top_bottom_margin"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

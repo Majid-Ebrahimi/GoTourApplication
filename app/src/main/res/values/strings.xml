@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GoTourApplication</string>
+    <string name="app_name">Gotour</string>
     <string name="splash_screen_go_tour">splash screen go tour</string>
     <string name="stepper_image_description">first stepper image</string>
     <string name="second_stepper_image_description">second stepper image</string>
@@ -31,7 +31,7 @@
     <string name="male">Male</string>
     <string name="terms_of_use_text">I agree and accept the terms of use.</string>
     <string name="get_ready">Get Ready For\nThe Travel Trip!</string>
-    <string name="find_your_location">Find your location...</string>
+    <string name="find_your_location">Find your location…</string>
     <string name="search_button_description">search button description</string>
 
 </resources>
