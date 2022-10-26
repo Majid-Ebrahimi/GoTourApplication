@@ -33,5 +33,6 @@
     <string name="get_ready">Get Ready For\nThe Travel Trip!</string>
     <string name="find_your_location">Find your location…</string>
     <string name="search_button_description">search button description</string>
+    <string name="profile_button_description">profile button description</string>
 
 </resources>
