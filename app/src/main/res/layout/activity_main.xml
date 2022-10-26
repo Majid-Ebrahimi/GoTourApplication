@@ -61,6 +61,7 @@
     <EditText
         android:id="@+id/InputSearchText"
         style="@style/search_edittext_style"
+        android:layout_marginEnd="@dimen/large_margin"
         android:hint="@string/find_your_location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
