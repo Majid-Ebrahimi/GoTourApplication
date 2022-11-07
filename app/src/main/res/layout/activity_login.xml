@@ -142,7 +142,9 @@
         android:layout_marginStart="@dimen/small_end_start_margin"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="@dimen/small_end_start_margin"
-        android:paddingStart="35dp"
+        android:drawableStart="@drawable/ic_google_icon"
+        android:drawablePadding="-90dp"
+        android:paddingStart="95dp"
         android:paddingEnd="0dp"
         android:text="@string/log_in_with_google"
         app:layout_constraintEnd_toEndOf="@+id/LoginButton"
@@ -150,21 +152,6 @@
         app:layout_constraintStart_toStartOf="@+id/LoginButton"
         app:layout_constraintTop_toBottomOf="@+id/OrTextView"
         tools:ignore="TouchTargetSizeCheck" />
-
-    <ImageView
-        android:id="@+id/GoogleIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:contentDescription="@string/google_icon"
-        app:layout_constraintBottom_toBottomOf="@+id/LoginWithGoogleButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/LoginWithGoogleButton"
-        app:layout_constraintTop_toTopOf="@+id/LoginWithGoogleButton"
-        app:srcCompat="@drawable/ic_google_icon" />
 
     <TextView
         android:id="@+id/SignUpHere"

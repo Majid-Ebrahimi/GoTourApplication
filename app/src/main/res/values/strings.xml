@@ -32,8 +32,10 @@
     <string name="terms_of_use_text">I agree and accept the terms of use.</string>
     <string name="get_ready">Get Ready For\nThe Travel Trip!</string>
     <string name="find_your_location">Find your location…</string>
-    <string name="search_button_description">search button description</string>
-    <string name="profile_button_description">profile button description</string>
+    <string name="search_button_description">search description</string>
+    <string name="profile_button_description">profile description</string>
+    <string name="main_back_button_description">main back description</string>
+
 
     <string name="image_title_string_1">Winter in Portugal</string>
     <string name="image_title_string_2">Sesimbra e Arrabida</string>
@@ -67,6 +69,7 @@
     <string name="image_prices_8">$7 400</string>
     <string name="image_prices_9">$2 500</string>
     <string name="image_prices_10">$4 000</string>
+    <string name="log_out">Log Out</string>
 
 
 </resources>

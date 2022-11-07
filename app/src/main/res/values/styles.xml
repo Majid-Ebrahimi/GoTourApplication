@@ -150,4 +150,16 @@
         <item name="android:background">@drawable/bottom_navigation_background</item>
     </style>
 
+    <style name="back_button_style">
+        <item name="android:layout_width">@dimen/medium_size</item>
+        <item name="android:layout_height">@dimen/medium_size</item>
+        <item name="android:layout_marginStart">@dimen/small_end_start_margin</item>
+        <item name="android:layout_marginTop">@dimen/medium_margin</item>
+        <item name="android:background">@drawable/pressed_background_grey</item>
+        <item name="android:drawableEnd">@drawable/ic_round_arrow_back</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:contentDescription">@string/main_back_button_description</item>
+    </style>
+
 </resources>

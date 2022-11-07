@@ -7,11 +7,14 @@
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/alo_alo_test.xml" value="0.347" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/bottom_navigation_background.xml" value="0.347" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.347" />
+        <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/ic_menu.xml" value="0.3635" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/ic_option.xml" value="0.347" />
+        <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/ic_round_arrow_back.xml" value="0.3635" />
+        <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/ic_round_exit_to_app_24.xml" value="0.3635" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/link_text_background.xml" value="0.347" />
-        <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/activity_login.xml" value="0.26403641881638845" />
+        <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/activity_setting.xml" value="0.29743589743589743" />
+        <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/activity_setting.xml" value="0.25" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.29743589743589743" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/activity_splash.xml" value="0.26403641881638845" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/activity_stepper.xml" value="0.29743589743589743" />

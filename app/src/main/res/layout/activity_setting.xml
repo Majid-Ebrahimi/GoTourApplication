@@ -2,24 +2,40 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ActivitySetting"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/base_orange"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context=".SettingActivity">
 
+
     <Button
-        android:id="@+id/HelloTextView"
-        android:layout_width="183dp"
-        android:layout_height="138dp"
-        android:gravity="center"
-        android:text="Hello"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/MainBackButton"
+        style="@style/back_button_style"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        tools:ignore="TouchTargetSizeCheck" />
 
+    <Button
+        android:id="@+id/button3"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_height"
+        android:layout_marginStart="@dimen/small_end_start_margin"
+        android:layout_marginEnd="@dimen/small_end_start_margin"
+        android:layout_marginBottom="@dimen/medium_top_bottom_margin"
+        android:drawableStart="@drawable/ic_round_exit_to_app"
+        android:drawablePadding="-135dp"
+        android:paddingStart="135dp"
+        android:paddingEnd="0dp"
+        android:text="@string/log_out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,4 +12,5 @@
     <dimen name="medium_margin">40dp</dimen>
     <dimen name="small_radius">8dp</dimen>
     <dimen name="medium_size">40dp</dimen>
+    <dimen name="small_size">25dp</dimen>
 </resources>
