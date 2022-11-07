@@ -47,7 +47,6 @@
     <string name="image_title_string_8">Eiffel Tower</string>
     <string name="image_title_string_9">Rhine Tower</string>
     <string name="image_title_string_10">Doi Inthanon</string>
-
     <string name="image_location_string_1">Lisbon, Portugal</string>
     <string name="image_location_string_2">Sesimbra, Lisbon, Portugal</string>
     <string name="image_location_string_3">San Francisco, USA</string>
@@ -58,7 +57,6 @@
     <string name="image_location_string_8">Paris, France</string>
     <string name="image_location_string_9">Düsseldorf, Germany</string>
     <string name="image_location_string_10">Chiang Mai, Thailand</string>
-
     <string name="image_prices_1">$3 000</string>
     <string name="image_prices_2">$2 200</string>
     <string name="image_prices_3">$5 000</string>
@@ -69,7 +67,8 @@
     <string name="image_prices_8">$7 400</string>
     <string name="image_prices_9">$2 500</string>
     <string name="image_prices_10">$4 000</string>
-    <string name="log_out">Log Out</string>
 
+    <string name="log_out">Log Out</string>
+    <string name="settings">Settings</string>
 
 </resources>
