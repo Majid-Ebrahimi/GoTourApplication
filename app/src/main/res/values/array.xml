@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="test">Test</string>
+    <integer-array name="images">
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_2</item>
+        <item>@drawable/image_3</item>
+        <item>@drawable/image_4</item>
+        <item>@drawable/image_5</item>
+        <item>@drawable/image_6</item>
+        <item>@drawable/image_7</item>
+        <item>@drawable/image_8</item>
+        <item>@drawable/image_9</item>
+        <item>@drawable/image_10</item>
+    </integer-array>
+
+    <string-array name="images_title">
+        <item>@string/image_title_string_1</item>
+        <item>@string/image_title_string_2</item>
+        <item>@string/image_title_string_3</item>
+        <item>@string/image_title_string_4</item>
+        <item>@string/image_title_string_5</item>
+        <item>@string/image_title_string_6</item>
+        <item>@string/image_title_string_7</item>
+        <item>@string/image_title_string_8</item>
+        <item>@string/image_title_string_9</item>
+        <item>@string/image_title_string_10</item>
+    </string-array>
+
+    <string-array name="images_location">
+        <item>@string/image_location_string_1</item>
+        <item>@string/image_location_string_2</item>
+        <item>@string/image_location_string_3</item>
+        <item>@string/image_location_string_4</item>
+        <item>@string/image_location_string_5</item>
+        <item>@string/image_location_string_6</item>
+        <item>@string/image_location_string_7</item>
+        <item>@string/image_location_string_8</item>
+        <item>@string/image_location_string_9</item>
+        <item>@string/image_location_string_10</item>
+    </string-array>
+
+    <string-array name="images_prices">
+        <item>@string/image_prices_1</item>
+        <item>@string/image_prices_2</item>
+        <item>@string/image_prices_3</item>
+        <item>@string/image_prices_4</item>
+        <item>@string/image_prices_5</item>
+        <item>@string/image_prices_6</item>
+        <item>@string/image_prices_7</item>
+        <item>@string/image_prices_8</item>
+        <item>@string/image_prices_9</item>
+        <item>@string/image_prices_10</item>
+    </string-array>
+
+</resources>

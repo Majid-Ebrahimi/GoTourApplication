@@ -35,4 +35,38 @@
     <string name="search_button_description">search button description</string>
     <string name="profile_button_description">profile button description</string>
 
+    <string name="image_title_string_1">Winter in Portugal</string>
+    <string name="image_title_string_2">Sesimbra e Arrabida</string>
+    <string name="image_title_string_3">Golden Gate bridge</string>
+    <string name="image_title_string_4">Temple of the Sacred Heart of Jesus</string>
+    <string name="image_title_string_5">St. Paul\'s Cathedral</string>
+    <string name="image_title_string_6">North Cascades National Park</string>
+    <string name="image_title_string_7">Wild wood sweden yoga treat</string>
+    <string name="image_title_string_8">Eiffel Tower</string>
+    <string name="image_title_string_9">Rhine Tower</string>
+    <string name="image_title_string_10">Doi Inthanon</string>
+
+    <string name="image_location_string_1">Lisbon, Portugal</string>
+    <string name="image_location_string_2">Sesimbra, Lisbon, Portugal</string>
+    <string name="image_location_string_3">San Francisco, USA</string>
+    <string name="image_location_string_4">Barcelona, Spain</string>
+    <string name="image_location_string_5">London, England</string>
+    <string name="image_location_string_6">Washington State, USA</string>
+    <string name="image_location_string_7">Stockholm, Sweden</string>
+    <string name="image_location_string_8">Paris, France</string>
+    <string name="image_location_string_9">Düsseldorf, Germany</string>
+    <string name="image_location_string_10">Chiang Mai, Thailand</string>
+
+    <string name="image_prices_1">$3 000</string>
+    <string name="image_prices_2">$2 200</string>
+    <string name="image_prices_3">$5 000</string>
+    <string name="image_prices_4">$3 100</string>
+    <string name="image_prices_5">$4 500</string>
+    <string name="image_prices_6">$1 900</string>
+    <string name="image_prices_7">$2 700</string>
+    <string name="image_prices_8">$7 400</string>
+    <string name="image_prices_9">$2 500</string>
+    <string name="image_prices_10">$4 000</string>
+
+
 </resources>
