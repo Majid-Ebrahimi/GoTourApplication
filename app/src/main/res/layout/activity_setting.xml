@@ -13,7 +13,7 @@
 
     <Button
         android:id="@+id/MainBackButton"
-        style="@style/back_button_style"
+        style="@style/main_back_button_style"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,10 +41,99 @@
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/SettingTitle"
         style="@style/main_title_style"
         android:text="@string/settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/GoToProfileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="@dimen/small_end_start_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_marginEnd="@dimen/small_end_start_margin"
+        android:background="@drawable/grey_button_background"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SettingTitle">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="4dp">
+
+            <ImageView
+                android:id="@+id/ProfileButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="@dimen/small_end_start_margin"
+                android:layout_marginEnd="@dimen/small_end_start_margin"
+                android:contentDescription="@string/profile_button_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/avatar" />
+
+            <ImageView
+                android:id="@+id/ActiveStatusImageView"
+                style="@style/online_status"
+                android:contentDescription="@string/online_status_content_description"
+                app:layout_constraintBottom_toBottomOf="@+id/ProfileButton"
+                app:layout_constraintEnd_toEndOf="@+id/ProfileButton"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintStart_toStartOf="@+id/ProfileButton"
+                app:layout_constraintTop_toTopOf="@+id/ProfileButton"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="228dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/linear_layout_title_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/sample_name_string" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="11sp"
+                style="@style/sub_title_style"
+                android:text="@string/sample_gmail_string" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/GoToProfileButton"
+            style="@style/forward_button_style"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

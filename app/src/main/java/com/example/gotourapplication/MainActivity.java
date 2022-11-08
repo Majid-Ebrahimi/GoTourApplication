@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         });
 //
 //profile button set onClick
-        binding.ProfileButton.setOnClickListener(null);
+        binding.ProfileButtonLayout.setOnClickListener(null);
 //
 //if edit text in focus mode, when press anywhere ,edit text exit focus mode and hide soft keyboard
         binding.ActivityMain.setOnClickListener(view -> {

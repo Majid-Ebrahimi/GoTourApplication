@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
@@ -27,6 +28,16 @@ public class SettingActivity extends AppCompatActivity {
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
             binding.MainBackButton.startAnimation(shake);
         });
-    }
 //
+//Back To Profile Button Todo: write a better comment
+        binding.GoToProfileLayout.setOnClickListener(null);
+
+//
+//Back To Profile Button Todo: write a better comment
+        binding.GoToProfileButton.setOnClickListener(null);
+
+//
+    }
+
+
 }
