@@ -35,8 +35,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="@dimen/small_end_start_margin"
-            android:layout_marginEnd="@dimen/small_end_start_margin"
+            android:layout_marginStart="@dimen/medium_end_start_margin"
+            android:layout_marginEnd="@dimen/medium_end_start_margin"
             android:layout_marginBottom="@dimen/medium_top_bottom_margin"
             android:background="#FFFFFF"
             android:baselineAligned="false"
@@ -91,7 +91,7 @@
         <TextView
             android:id="@+id/StepperTitle"
             style="@style/title_style"
-            android:layout_marginStart="@dimen/small_end_start_margin"
+            android:layout_marginStart="@dimen/medium_end_start_margin"
             android:layout_marginTop="550dp"
             android:text="@string/title"
             android:textSize="42sp"
@@ -103,7 +103,7 @@
         <TextView
             android:id="@+id/StepperSubTitle"
             style="@style/sub_title_style"
-            android:layout_marginStart="@dimen/small_end_start_margin"
+            android:layout_marginStart="@dimen/medium_end_start_margin"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
             android:text="@string/sub_title"

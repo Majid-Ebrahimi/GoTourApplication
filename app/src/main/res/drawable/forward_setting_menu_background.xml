@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true" >
         <shape android:shape="rectangle" android:tint="@color/base_normal_grey">
-            <corners android:topRightRadius="8dp" android:bottomRightRadius="8dp"/>
+            <corners android:topRightRadius="@dimen/medium_radius" android:bottomRightRadius="@dimen/medium_radius"/>
         </shape>
     </item>
 </selector>

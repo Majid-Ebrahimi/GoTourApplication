@@ -10,6 +10,7 @@
     android:focusableInTouchMode="true"
     tools:context=".MainActivity">
 
+    <!--ToDo create dimen fdr sizes-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ProfileButtonLayout"
         android:layout_width="wrap_content"
@@ -51,7 +52,7 @@
         android:id="@+id/MenuButton"
         android:layout_width="@dimen/medium_size"
         android:layout_height="@dimen/medium_size"
-        android:layout_marginStart="@dimen/small_end_start_margin"
+        android:layout_marginStart="@dimen/medium_end_start_margin"
         android:layout_marginTop="@dimen/medium_margin"
         android:background="@drawable/pressed_background_light_grey"
         android:contentDescription="@string/menu_button_content_description"
@@ -64,7 +65,7 @@
     <TextView
         android:id="@+id/MainTitle"
         style="@style/main_title_style"
-        android:layout_marginStart="@dimen/small_end_start_margin"
+        android:layout_marginStart="@dimen/medium_end_start_margin"
         android:layout_marginTop="@dimen/medium_top_bottom_margin"
         android:text="@string/get_ready"
         app:layout_constraintEnd_toEndOf="parent"

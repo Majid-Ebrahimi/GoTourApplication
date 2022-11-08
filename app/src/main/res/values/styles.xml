@@ -88,8 +88,8 @@
     <style name="edittext_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/widget_height</item>
-        <item name="android:layout_marginStart">@dimen/small_end_start_margin</item>
-        <item name="android:layout_marginEnd">@dimen/small_end_start_margin</item>
+        <item name="android:layout_marginStart">@dimen/medium_end_start_margin</item>
+        <item name="android:layout_marginEnd">@dimen/medium_end_start_margin</item>
         <item name="android:background">@drawable/edit_text_background</item>
         <item name="android:fontFamily">@font/gilroy_light</item>
         <item name="android:padding">@dimen/widget_padding</item>
@@ -131,9 +131,9 @@
 
     <style name="search_button_style" parent="button_style">
         <item name="android:layout_width">@dimen/widget_height</item>
-        <item name="android:layout_marginStart">@dimen/small_end_start_margin</item>
+        <item name="android:layout_marginStart">@dimen/medium_end_start_margin</item>
         <item name="android:layout_marginTop">@dimen/medium_margin</item>
-        <item name="android:layout_marginEnd">@dimen/small_end_start_margin</item>
+        <item name="android:layout_marginEnd">@dimen/medium_end_start_margin</item>
         <item name="android:contentDescription">@string/search_button_description</item>
         <item name="android:foreground">@drawable/ic_search</item>
         <item name="android:foregroundGravity">center</item>
@@ -141,9 +141,9 @@
 
     <style name="search_edittext_style" parent="edittext_style">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_marginStart">@dimen/small_end_start_margin</item>
+        <item name="android:layout_marginStart">@dimen/medium_end_start_margin</item>
         <item name="android:layout_marginTop">@dimen/medium_margin</item>
-        <item name="android:layout_marginEnd">@dimen/small_end_start_margin</item>
+        <item name="android:layout_marginEnd">@dimen/medium_end_start_margin</item>
         <item name="android:ems">10</item>
         <item name="android:inputType">text</item>
     </style>
@@ -152,8 +152,8 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/widget_height</item>
         <item name="android:layout_marginTop">@dimen/top_margin</item>
-        <item name="android:layout_marginStart">@dimen/small_end_start_margin</item>
-        <item name="android:layout_marginEnd">@dimen/small_end_start_margin</item>
+        <item name="android:layout_marginStart">@dimen/medium_end_start_margin</item>
+        <item name="android:layout_marginEnd">@dimen/medium_end_start_margin</item>
         <item name="android:layout_marginBottom">@dimen/medium_margin</item>
         <item name="android:background">@drawable/bottom_navigation_background</item>
     </style>
@@ -161,7 +161,7 @@
     <style name="main_back_button_style">
         <item name="android:layout_width">@dimen/medium_size</item>
         <item name="android:layout_height">@dimen/medium_size</item>
-        <item name="android:layout_marginStart">@dimen/small_end_start_margin</item>
+        <item name="android:layout_marginStart">@dimen/medium_end_start_margin</item>
         <item name="android:layout_marginTop">@dimen/medium_margin</item>
         <item name="android:background">@drawable/pressed_background_light_grey</item>
         <item name="android:drawableEnd">@drawable/ic_round_arrow_back</item>
@@ -174,9 +174,17 @@
         <item name="android:layout_width">@dimen/medium_size</item>
         <item name="android:layout_height">@dimen/medium_size</item>
         <item name="android:drawableEnd">@drawable/ic_round_arrow_forward</item>
-        <item name="android:background">@drawable/pressed_background_grey</item>
+        <item name="android:background">@drawable/forward_setting_menu_background</item>
         <item name="android:paddingStart">0dp</item>
         <item name="android:paddingEnd">8dp</item>
+        <item name="android:contentDescription">@string/forward_button_description</item>
+    </style>
+
+    <style name="small_forward_button_style">
+        <item name="android:layout_width">@dimen/medium_size</item>
+        <item name="android:layout_height">@dimen/medium_size</item>
+        <item name="android:drawableEnd">@drawable/ic_round_small_arrow_forward</item>
+        <item name="android:background">@drawable/forward_setting_menu_background</item>
         <item name="android:contentDescription">@string/forward_button_description</item>
     </style>
 
@@ -185,6 +193,14 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/medium_margin</item>
         <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="setting_menu_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/medium_end_start_margin</item>
+        <item name="android:layout_marginTop">@dimen/top_margin</item>
+        <item name="android:layout_marginEnd">@dimen/medium_end_start_margin</item>
+        <item name="android:background">@drawable/grey_button_background</item>
     </style>
 
     <string name="online_status_content_description">online status content description</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="small_end_start_margin">15dp</dimen>
+    <dimen name="medium_end_start_margin">15dp</dimen>
+    <dimen name="layout_padding">25dp</dimen>
     <dimen name="widget_height">45dp</dimen>
     <dimen name="widget_padding">13dp</dimen>
     <dimen name="link_text_padding">4dp</dimen>
@@ -13,4 +14,7 @@
     <dimen name="small_radius">8dp</dimen>
     <dimen name="medium_size">40dp</dimen>
     <dimen name="small_size">25dp</dimen>
+    <dimen name="medium_radius">15dp</dimen>
+    <dimen name="normal_radius">10dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
 </resources>
