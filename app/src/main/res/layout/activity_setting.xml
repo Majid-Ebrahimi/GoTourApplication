@@ -20,6 +20,7 @@
     <!--ToDo icons-->
     <!--ToDo styles-->
     <!--ToDo organize everything at this Activity-->
+    <!--ToDo size of touch zone-->
 
 
     <Button
@@ -40,7 +41,7 @@
         android:layout_marginTop="@dimen/small_margin"
         android:layout_marginEnd="@dimen/medium_end_start_margin"
         android:layout_marginBottom="@dimen/medium_top_bottom_margin"
-        android:drawableStart="@drawable/ic_round_exit_to_app"
+        android:drawableStart="@drawable/ic_exit"
         android:drawablePadding="-135dp"
         android:paddingStart="135dp"
         android:paddingEnd="0dp"
@@ -170,7 +171,7 @@
                 android:layout_width="@dimen/small_size"
                 android:layout_height="@dimen/small_size"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_test" />
+                app:srcCompat="@drawable/ic_notification" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -207,7 +208,7 @@
                 android:layout_width="@dimen/small_size"
                 android:layout_height="@dimen/small_size"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_test" />
+                app:srcCompat="@drawable/ic_language" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -244,7 +245,7 @@
                 android:layout_width="@dimen/small_size"
                 android:layout_height="@dimen/small_size"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_test" />
+                app:srcCompat="@drawable/ic_currency" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -301,7 +302,7 @@
                 android:layout_width="@dimen/small_size"
                 android:layout_height="@dimen/small_size"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_test" />
+                app:srcCompat="@drawable/ic_payment_method" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -338,7 +339,7 @@
                 android:layout_width="@dimen/small_size"
                 android:layout_height="@dimen/small_size"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_test" />
+                app:srcCompat="@drawable/ic_privacy_policy" />
 
             <TextView
                 android:id="@+id/textView55"
@@ -375,7 +376,7 @@
                 android:layout_width="@dimen/small_size"
                 android:layout_height="@dimen/small_size"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_test" />
+                app:srcCompat="@drawable/ic_terms_of_use" />
 
             <TextView
                 android:id="@+id/textView77"
