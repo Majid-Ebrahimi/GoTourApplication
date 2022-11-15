@@ -74,5 +74,13 @@
     <string name="sample_gmail_string">majidebrahiimi@gmail.com</string>
     <string name="forward_button_description">forward description</string>
     <string name="menu_button_content_description">menu content description</string>
+    <string name="notification">Notification</string>
+    <string name="language">Language</string>
+    <string name="currency">Currency</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="preference">Preference</string>
+    <string name="banking_38_payment"><![CDATA[Banking & Payment]]></string>
 
 </resources>
