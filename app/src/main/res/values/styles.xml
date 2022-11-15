@@ -171,7 +171,7 @@
     </style>
 
     <style name="forward_button_style">
-        <item name="android:layout_width">@dimen/medium_size</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/medium_size</item>
         <item name="android:drawableEnd">@drawable/ic_round_arrow_forward</item>
         <item name="android:background">@drawable/forward_setting_menu_background</item>
