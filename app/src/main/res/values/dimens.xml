@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="medium_end_start_margin">15dp</dimen>
+    <dimen name="large_end_start_margin">20dp</dimen>
     <dimen name="layout_padding">25dp</dimen>
     <dimen name="widget_height">45dp</dimen>
     <dimen name="widget_padding">13dp</dimen>

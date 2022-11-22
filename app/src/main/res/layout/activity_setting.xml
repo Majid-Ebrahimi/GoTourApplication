@@ -42,8 +42,8 @@
         android:layout_marginEnd="@dimen/medium_end_start_margin"
         android:layout_marginBottom="@dimen/medium_top_bottom_margin"
         android:drawableStart="@drawable/ic_exit"
-        android:drawablePadding="-135dp"
-        android:paddingStart="135dp"
+        android:drawablePadding="-120dp"
+        android:paddingStart="120dp"
         android:paddingEnd="0dp"
         android:text="@string/log_out"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -105,7 +105,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
-            android:layout_width="228dp"
+            android:layout_width="190dp"
             android:layout_height="48dp"
             android:layout_gravity="center_vertical"
             android:orientation="vertical">
@@ -120,21 +120,24 @@
 
             <TextView
                 android:id="@+id/textView2"
+                style="@style/sub_title_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="11sp"
-                style="@style/sub_title_style"
-                android:text="@string/sample_gmail_string" />
+                android:text="@string/sample_gmail_string"
+                android:textSize="11sp" />
         </LinearLayout>
 
         <Button
             android:id="@+id/GoToProfileButton"
             style="@style/forward_button_style"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
+            android:paddingStart="0dp"
             android:clickable="true"
             android:focusable="true"
+            android:paddingEnd="@dimen/medium_end_start_margin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -183,6 +186,8 @@
                 android:layout_width="236dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingEnd="0dp"
                 android:gravity="center_vertical"
                 android:textSize="@dimen/small_text_size"
                 style="@style/sub_title_style"
@@ -224,6 +229,8 @@
                 android:layout_width="236dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingEnd="0dp"
                 android:gravity="center_vertical"
                 style="@style/sub_title_style"
                 android:textSize="@dimen/small_text_size"
@@ -266,6 +273,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingEnd="0dp"
                 style="@style/sub_title_style"
                 android:textSize="@dimen/small_text_size"
                 android:text="@string/currency" />
@@ -329,6 +338,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingEnd="0dp"
                 style="@style/sub_title_style"
                 android:textSize="@dimen/small_text_size"
                 android:text="@string/payment_method" />
@@ -371,6 +382,8 @@
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 style="@style/sub_title_style"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingEnd="0dp"
                 android:textSize="@dimen/small_text_size"
                 android:text="@string/privacy_policy" />
 
@@ -411,6 +424,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingEnd="0dp"
                 style="@style/sub_title_style"
                 android:textSize="@dimen/small_text_size"
                 android:text="@string/terms_of_use" />
