@@ -44,7 +44,6 @@ public class SettingActivity extends AppCompatActivity {
             intent.putExtra("ProfileStatus",1);
             intent.putExtra("BottomNavigationStatus",4);
             startActivity(intent);
-            startActivity(intent);
         });
 //
 //Notification Button Todo: write a better comment
