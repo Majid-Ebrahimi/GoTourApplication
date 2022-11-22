@@ -30,10 +30,22 @@ public class SettingActivity extends AppCompatActivity {
         });
 //
 //Back To Profile Button Todo: write a better comment
-        binding.GoToProfileLayout.setOnClickListener(null);
+        Intent intent = new Intent(SettingActivity.this,MainActivity.class);
+        binding.GoToProfileLayout.setOnClickListener(View ->{
+            intent.putExtra("MainStatus",8);
+            intent.putExtra("ProfileStatus",1);
+            intent.putExtra("BottomNavigationStatus",4);
+            startActivity(intent);
+        });
 //
 //Back To Profile Button Todo: write a better comment
-        binding.GoToProfileButton.setOnClickListener(null);
+        binding.GoToProfileButton.setOnClickListener(View -> {
+            intent.putExtra("MainStatus",8);
+            intent.putExtra("ProfileStatus",1);
+            intent.putExtra("BottomNavigationStatus",4);
+            startActivity(intent);
+            startActivity(intent);
+        });
 //
 //Notification Button Todo: write a better comment
         binding.Notification.setOnClickListener(null);

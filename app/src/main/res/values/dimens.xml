@@ -23,4 +23,5 @@
     <dimen name="medium_padding">10dp</dimen>
     <dimen name="small_size_2">35dp</dimen>
     <dimen name="small_bottom_margin">5dp</dimen>
+    <dimen name="very_large_margin">120dp</dimen>
 </resources>

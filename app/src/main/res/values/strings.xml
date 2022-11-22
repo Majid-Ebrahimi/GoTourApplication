@@ -82,5 +82,6 @@
     <string name="terms_of_use">Terms of Use</string>
     <string name="preference">Preference</string>
     <string name="banking_38_payment"><![CDATA[Banking & Payment]]></string>
+    <string name="profile">Profile</string>
 
 </resources>
