@@ -20,4 +20,6 @@
     <dimen name="small_text_size">13sp</dimen>
     <dimen name="very_small_icon_size">5dp</dimen>
     <dimen name="medium_padding">10dp</dimen>
+    <dimen name="small_size_2">35dp</dimen>
+    <dimen name="small_bottom_margin">5dp</dimen>
 </resources>

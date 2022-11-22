@@ -31,12 +31,29 @@ public class SettingActivity extends AppCompatActivity {
 //
 //Back To Profile Button Todo: write a better comment
         binding.GoToProfileLayout.setOnClickListener(null);
-
 //
 //Back To Profile Button Todo: write a better comment
         binding.GoToProfileButton.setOnClickListener(null);
-
 //
+//Notification Button Todo: write a better comment
+        binding.Notification.setOnClickListener(null);
+//
+//Language Button Todo: write a better comment
+        binding.Language.setOnClickListener(null);
+//
+//Currency Button Todo: write a better comment
+        binding.Currency.setOnClickListener(null);
+//
+//PaymentMethod Button Todo: write a better comment
+        binding.PaymentMethod.setOnClickListener(null);
+//
+//PrivacyPolicy Button Todo: write a better comment
+        binding.PrivacyPolicy.setOnClickListener(null);
+//
+//TermsOfUse Button Todo: write a better comment
+        binding.TermsOfUse.setOnClickListener(null);
+//
+
     }
 
 
