@@ -83,5 +83,6 @@
     <string name="preference">Preference</string>
     <string name="banking_38_payment"><![CDATA[Banking & Payment]]></string>
     <string name="profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
 
 </resources>

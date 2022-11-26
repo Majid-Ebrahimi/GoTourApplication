@@ -204,4 +204,9 @@
     </style>
 
     <string name="online_status_content_description">online status content description</string>
+
+    <style name="image_with_radius_style">
+        <item name="cornerSize">10%</item>
+    </style>
+
 </resources>
