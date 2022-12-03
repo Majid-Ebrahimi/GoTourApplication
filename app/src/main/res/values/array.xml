@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="test">Test</string>
     <integer-array name="images">
         <item>@drawable/image_1</item>
         <item>@drawable/image_2</item>
