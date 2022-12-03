@@ -10,7 +10,7 @@
     android:focusableInTouchMode="true"
     tools:context=".MainActivity">
 
-    <!--ToDo create dimen fdr sizes-->
+    <!--ToDo create dimen for sizes-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/MainLayout"
         android:visibility="visible"
