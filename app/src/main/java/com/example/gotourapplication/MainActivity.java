@@ -22,15 +22,16 @@ import android.widget.TextView;
 import com.example.gotourapplication.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     private ActivityMainBinding binding;
 //Recycler VIEW
-    RecyclerView rv;
     ArrayList<String> dataSource;
     ArrayList<Integer> dataSource2;
     ArrayList<String> dataSource3;
@@ -96,22 +97,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 //
-        //Recycler View
-        rv = findViewById(R.id.horizontalRv);
 
         //Setting the data source
-        dataSource = new ArrayList<>();
-        dataSource.add(getString(R.string.image_title_string_1));
-        dataSource.add(getString(R.string.image_title_string_2));
-        dataSource.add(getString(R.string.image_title_string_3));
-        dataSource.add(getString(R.string.image_title_string_4));
-        dataSource.add(getString(R.string.image_title_string_5));
-        dataSource.add(getString(R.string.image_title_string_6));
-        dataSource.add(getString(R.string.image_title_string_7));
-        dataSource.add(getString(R.string.image_title_string_8));
-        dataSource.add(getString(R.string.image_title_string_9));
-        dataSource.add(getString(R.string.image_title_string_10));
+        dataSource = new ArrayList(Arrays.asList(getResources().getStringArray(R.array.images_title)));
 
+//        dataSource2 = new ArrayList(Arrays.asList(getResources().getStringArray(R.array.images)));
 
         dataSource2 = new ArrayList<>();
         dataSource2.add(R.drawable.image_1);
@@ -125,35 +115,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         dataSource2.add(R.drawable.image_9);
         dataSource2.add(R.drawable.image_10);
 
+        dataSource3 = new ArrayList(Arrays.asList(getResources().getStringArray(R.array.images_prices)));
 
-        dataSource3 = new ArrayList<>();
-        dataSource3.add(getString(R.string.image_prices_1));
-        dataSource3.add(getString(R.string.image_prices_2));
-        dataSource3.add(getString(R.string.image_prices_3));
-        dataSource3.add(getString(R.string.image_prices_4));
-        dataSource3.add(getString(R.string.image_prices_5));
-        dataSource3.add(getString(R.string.image_prices_6));
-        dataSource3.add(getString(R.string.image_prices_7));
-        dataSource3.add(getString(R.string.image_prices_8));
-        dataSource3.add(getString(R.string.image_prices_9));
-        dataSource3.add(getString(R.string.image_prices_10));
-
-        dataSource4 = new ArrayList<>();
-        dataSource4.add(getString(R.string.image_location_string_1));
-        dataSource4.add(getString(R.string.image_location_string_2));
-        dataSource4.add(getString(R.string.image_location_string_3));
-        dataSource4.add(getString(R.string.image_location_string_4));
-        dataSource4.add(getString(R.string.image_location_string_5));
-        dataSource4.add(getString(R.string.image_location_string_6));
-        dataSource4.add(getString(R.string.image_location_string_7));
-        dataSource4.add(getString(R.string.image_location_string_8));
-        dataSource4.add(getString(R.string.image_location_string_9));
-        dataSource4.add(getString(R.string.image_location_string_10));
+        dataSource4 = new ArrayList(Arrays.asList(getResources().getStringArray(R.array.images_location)));
 
         linearLayoutManager = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false);
         myRvAdapter = new MyRvAdapter(dataSource,dataSource2,dataSource3,dataSource4);
-        rv.setLayoutManager(linearLayoutManager);
-        rv.setAdapter(myRvAdapter);
+        binding.horizontalRv.setLayoutManager(linearLayoutManager);
+        binding.horizontalRv.setAdapter(myRvAdapter);
         //
 
 //menu button animation and set onClick for direct to setting activity
