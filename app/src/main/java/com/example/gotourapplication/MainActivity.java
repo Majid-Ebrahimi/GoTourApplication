@@ -28,64 +28,64 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     private ActivityMainBinding binding;
-//Recycler VIEW
-    ArrayList<String> dataSource;
-    ArrayList<Integer> dataSource2;
-    ArrayList<String> dataSource3;
-    ArrayList<String> dataSource4;
+//TODO Recycler VIEW
+    ArrayList<Integer> imagesSource;
+    ArrayList<String> titlesSource;
+    ArrayList<String> pricesSource;
+    ArrayList<String> locationsSource;
 
     LinearLayoutManager linearLayoutManager;
-    MyRvAdapter myRvAdapter;
+    sliderImageAdapter sliderImageAdapter;
 
-    class MyRvAdapter extends RecyclerView.Adapter<MyRvAdapter.MyHolder> {
-        ArrayList<String> data;
-        ArrayList<Integer> data2;
-        ArrayList<String> data3;
-        ArrayList<String> data4;
+    class sliderImageAdapter extends RecyclerView.Adapter<sliderImageAdapter.MyHolder> {
+        ArrayList<Integer> imagesArrayList;
+        ArrayList<String> titlesArrayList;
+        ArrayList<String> pricesArrayList;
+        ArrayList<String> locationsArrayList;
 
-        public MyRvAdapter(ArrayList<String> data,ArrayList<Integer> data2,ArrayList<String> data3, ArrayList<String> data4) {
-            this.data = data;
-            this.data2 = data2;
-            this.data3 = data3;
-            this.data4 = data4;
+        public sliderImageAdapter(ArrayList<Integer> imagesArrayList, ArrayList<String> titlesArrayList, ArrayList<String> pricesArrayList, ArrayList<String> locationsArrayList) {
+            this.imagesArrayList = imagesArrayList;
+            this.titlesArrayList = titlesArrayList;
+            this.pricesArrayList = pricesArrayList;
+            this.locationsArrayList = locationsArrayList;
         }
 
         @NonNull
         @Override
         public MyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.rv_item, parent, false);
+            View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.recycler_view_card_items, parent, false);
             return new MyHolder(view);
         }
 
         @Override
         public void onBindViewHolder(@NonNull MyHolder holder, int position) {
-            holder.tvTitle.setText(data.get(position));
-            holder.imageRV.setImageResource(data2.get(position));
-            holder.price.setText(data3.get(position));
-            holder.location.setText(data4.get(position));
+            holder.ImagesCardView.setImageResource(imagesArrayList.get(position));
+            holder.TitlesTextView.setText(titlesArrayList.get(position));
+            holder.PricesTextView.setText(pricesArrayList.get(position));
+            holder.LocationsTextView.setText(locationsArrayList.get(position));
         }
 
         @Override
         public int getItemCount() {
-            return data.size();
+            return imagesArrayList.size();
         }
 
         class MyHolder extends RecyclerView.ViewHolder {
-            TextView tvTitle;
-            ImageView imageRV;
-            TextView price;
-            TextView location;
+            ImageView ImagesCardView;
+            TextView TitlesTextView;
+            TextView PricesTextView;
+            TextView LocationsTextView;
             public MyHolder(@NonNull View itemView) {
                 super(itemView);
-                tvTitle = itemView.findViewById(R.id.tvTitle);
-                imageRV = itemView.findViewById(R.id.imageRV);
-                price = itemView.findViewById(R.id.price);
-                location = itemView.findViewById(R.id.location);
+                ImagesCardView = itemView.findViewById(R.id.ImagesCardView);
+                TitlesTextView = itemView.findViewById(R.id.TitlesTextView);
+                PricesTextView = itemView.findViewById(R.id.PricesTextView);
+                LocationsTextView = itemView.findViewById(R.id.LocationsTextView);
             }
         }
 
     }
-    //
+    /////////////-------------------------------------------------------------------------
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,30 +96,31 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 //
 ////////////////TODO RecyclerView    --  -- ---- -- -- -- --- --- --- -- --- -- ---- --- ---
         //Setting the data source
-        dataSource = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.images_title)));
 
-//        dataSource2 = new ArrayList(Arrays.asList(getResources().getStringArray(R.array.images)));
+//        dataSource = new ArrayList(Arrays.asList(getResources().getStringArray(R.array.images)));
 
-        dataSource2 = new ArrayList<>();
-        dataSource2.add(R.drawable.image_1);
-        dataSource2.add(R.drawable.image_2);
-        dataSource2.add(R.drawable.image_3);
-        dataSource2.add(R.drawable.image_4);
-        dataSource2.add(R.drawable.image_5);
-        dataSource2.add(R.drawable.image_6);
-        dataSource2.add(R.drawable.image_7);
-        dataSource2.add(R.drawable.image_8);
-        dataSource2.add(R.drawable.image_9);
-        dataSource2.add(R.drawable.image_10);
+        imagesSource = new ArrayList<>();
+        imagesSource.add(R.drawable.image_1);
+        imagesSource.add(R.drawable.image_2);
+        imagesSource.add(R.drawable.image_3);
+        imagesSource.add(R.drawable.image_4);
+        imagesSource.add(R.drawable.image_5);
+        imagesSource.add(R.drawable.image_6);
+        imagesSource.add(R.drawable.image_7);
+        imagesSource.add(R.drawable.image_8);
+        imagesSource.add(R.drawable.image_9);
+        imagesSource.add(R.drawable.image_10);
 
-        dataSource3 = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.images_prices)));
+        titlesSource = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.images_title)));
 
-        dataSource4 = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.images_location)));
+        pricesSource = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.images_prices)));
+
+        locationsSource = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.images_location)));
 
         linearLayoutManager = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false);
-        myRvAdapter = new MyRvAdapter(dataSource,dataSource2,dataSource3,dataSource4);
-        binding.horizontalRv.setLayoutManager(linearLayoutManager);
-        binding.horizontalRv.setAdapter(myRvAdapter);
+        sliderImageAdapter = new sliderImageAdapter(imagesSource, titlesSource, pricesSource, locationsSource);
+        binding.SliderImage.setLayoutManager(linearLayoutManager);
+        binding.SliderImage.setAdapter(sliderImageAdapter);
         //////////////
 
 //menu button animation and set onClick for direct to setting activity

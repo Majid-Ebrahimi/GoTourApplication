@@ -107,7 +107,7 @@
             tools:ignore="ImageContrastCheck,RedundantDescriptionCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/horizontalRv"
+            android:id="@+id/SliderImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scrollbars="horizontal"
@@ -116,7 +116,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/InputSearchText"
-            app:layout_constraintVertical_bias="0.48" />
+            app:layout_constraintVertical_bias="0.928" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
