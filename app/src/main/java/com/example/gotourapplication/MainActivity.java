@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,18 +16,14 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.gotourapplication.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -97,9 +94,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 //
-
+////////////////TODO RecyclerView    --  -- ---- -- -- -- --- --- --- -- --- -- ---- --- ---
         //Setting the data source
-        dataSource = new ArrayList(Arrays.asList(getResources().getStringArray(R.array.images_title)));
+        dataSource = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.images_title)));
 
 //        dataSource2 = new ArrayList(Arrays.asList(getResources().getStringArray(R.array.images)));
 
@@ -115,15 +112,15 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         dataSource2.add(R.drawable.image_9);
         dataSource2.add(R.drawable.image_10);
 
-        dataSource3 = new ArrayList(Arrays.asList(getResources().getStringArray(R.array.images_prices)));
+        dataSource3 = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.images_prices)));
 
-        dataSource4 = new ArrayList(Arrays.asList(getResources().getStringArray(R.array.images_location)));
+        dataSource4 = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.images_location)));
 
         linearLayoutManager = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false);
         myRvAdapter = new MyRvAdapter(dataSource,dataSource2,dataSource3,dataSource4);
         binding.horizontalRv.setLayoutManager(linearLayoutManager);
         binding.horizontalRv.setAdapter(myRvAdapter);
-        //
+        //////////////
 
 //menu button animation and set onClick for direct to setting activity
         Animation shake = AnimationUtils.loadAnimation(this,R.anim.shake_animation);
@@ -173,6 +170,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 //
     }
 //bottom navigation conditions ((if click on any icon Do something...))
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
@@ -196,11 +194,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 //Todo what will happen when click on profile icon
                 binding.MainLayout.setVisibility(View.GONE);
                 binding.ProfileLayout.setVisibility(View.VISIBLE);
-//                Intent intent2 = new Intent(MainActivity.this,ProfileActivity.class);
-//                startActivity(intent2);
-//                overridePendingTransition(0, 0);
-
-
                 return true;
 
         }
