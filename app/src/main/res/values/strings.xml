@@ -85,5 +85,7 @@
     <string name="profile">Profile</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="card_image">Card images</string>
+    <string name="best_place">Best Place</string>
+    <string name="see_all">See All</string>
 
 </resources>

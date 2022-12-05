@@ -13,10 +13,10 @@
     <!--ToDo create dimen for sizes-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/MainLayout"
-        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/very_large_margin"
+        android:layout_marginBottom="@dimen/large_margin_bottom"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +57,8 @@
                 app:layout_constraintHorizontal_bias="0.85"
                 app:layout_constraintStart_toStartOf="@+id/ProfileButton"
                 app:layout_constraintTop_toTopOf="@+id/ProfileButton"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="ImageContrastCheck" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -82,7 +83,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/MainTitle"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
         <Button
             android:id="@+id/SearchButton"
@@ -105,6 +106,35 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/InputSearchText"
             app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/BestPlaceTextView"
+            style="@style/main_sub_title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_end_start_margin"
+            android:layout_marginEnd="@dimen/medium_end_start_margin"
+            android:layout_marginBottom="@dimen/very_small_end_start_margin"
+            android:text="@string/best_place"
+            app:layout_constraintBottom_toTopOf="@+id/SliderImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/sub_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/medium_end_start_margin"
+            android:layout_marginBottom="@dimen/very_small_end_start_margin"
+            android:text="@string/see_all"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/SliderImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/BestPlaceTextView"
+            tools:ignore="TextContrastCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

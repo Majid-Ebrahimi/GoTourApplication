@@ -7,9 +7,10 @@
     android:layout_height="wrap_content"
     android:layout_margin="2dp"
     app:cardCornerRadius="20dp"
-    android:padding="15dp"
     app:cardUseCompatPadding="true">
 
+
+    <!--TODO Fix everyThing about this card view-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="295dp"
         android:layout_height="180dp">
@@ -40,7 +41,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/ImagesCardView"
-            app:layout_constraintTop_toTopOf="@+id/ImagesCardView" />
+            app:layout_constraintTop_toTopOf="@+id/ImagesCardView"
+            tools:ignore="TextContrastCheck" />
 
 
         <TextView
@@ -59,62 +61,28 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/TitlesTextView" />
 
-
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="@dimen/medium_end_start_margin"-->
-<!--            android:layout_marginBottom="@dimen/medium_end_start_margin"-->
-<!--            app:layout_constraintBottom_toBottomOf="@+id/ImagesCardView"-->
-<!--            app:layout_constraintEnd_toEndOf="@+id/TitlesTextView"-->
-<!--            app:layout_constraintHorizontal_bias="0.0"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/TitlesTextView"-->
-<!--            app:layout_constraintVertical_bias="0.0">-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/imageView6"-->
-<!--                android:layout_width="@dimen/small_icon_size"-->
-<!--                android:layout_height="match_parent"-->
-<!--                app:srcCompat="@drawable/ic_round_location" />-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/LocationsTextView"-->
-<!--                style="@style/card_sub_title_text_style"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:gravity="start|center"-->
-<!--                android:paddingStart="@dimen/small_bottom_margin"-->
-<!--                android:paddingEnd="0dp"-->
-<!--                android:text="@string/image_location_string_1" />-->
-<!--        </LinearLayout>-->
-
-
+        <!--TODO Fix style & other relate this Text view-->
         <TextView
-            style="@style/card_title_text_style"
-            android:shadowRadius="0"
             android:id="@+id/PricesTextView"
+            style="@style/card_title_text_style"
             android:layout_width="60dp"
             android:layout_height="24dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="@dimen/very_small_end_start_margin"
             android:layout_marginBottom="@dimen/medium_end_start_margin"
             android:background="@drawable/card_price_background"
-
             android:gravity="center"
-            android:text="TextView"
+            android:shadowRadius="0"
+            android:text="@string/image_prices_1"
             android:textColor="@color/white"
-            android:textSize="10sp"
+            android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="@+id/ImagesCardView"
             app:layout_constraintEnd_toEndOf="@+id/ImagesCardView"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/TitlesTextView"
             app:layout_constraintTop_toBottomOf="@+id/TitlesTextView"
-            app:layout_constraintVertical_bias="1.0" />
-
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="TextContrastCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
