@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/top_margin"
             android:layout_marginEnd="5dp"
             android:background="@drawable/pressed_background_light_grey"
             android:padding="10dp"
@@ -60,30 +60,17 @@
                 app:layout_constraintVertical_bias="1.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <ImageView
-            android:id="@+id/MenuButton"
-            android:layout_width="@dimen/medium_size"
-            android:layout_height="@dimen/medium_size"
-            android:layout_marginStart="@dimen/medium_end_start_margin"
-            android:layout_marginTop="@dimen/medium_margin"
-            android:background="@drawable/pressed_background_light_grey"
-            android:contentDescription="@string/menu_button_content_description"
-            app:layout_constraintEnd_toStartOf="@+id/ProfileButtonLayout"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_menu" />
 
         <TextView
             android:id="@+id/MainTitle"
             style="@style/main_title_style"
             android:layout_marginStart="@dimen/medium_end_start_margin"
-            android:layout_marginTop="@dimen/medium_top_bottom_margin"
+            android:layout_marginTop="@dimen/very_large_margin"
             android:text="@string/get_ready"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/MenuButton" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/InputSearchText"
@@ -117,7 +104,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/InputSearchText"
             app:layout_constraintVertical_bias="0.928" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/MenuButton"
+        android:layout_width="@dimen/medium_size"
+        android:layout_height="@dimen/medium_size"
+        android:layout_marginStart="@dimen/medium_end_start_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:background="@drawable/pressed_background_light_grey"
+        android:contentDescription="@string/menu_button_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -134,7 +136,6 @@
         android:id="@+id/ProfileLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/very_large_margin"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"

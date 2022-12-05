@@ -64,5 +64,11 @@
             android:text="TextView"
             android:textColor="@color/white"
             android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_round_location" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
