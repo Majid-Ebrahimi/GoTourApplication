@@ -84,5 +84,6 @@
     <string name="banking_38_payment"><![CDATA[Banking & Payment]]></string>
     <string name="profile">Profile</string>
     <string name="edit_profile">Edit Profile</string>
+    <string name="card_image">Card images</string>
 
 </resources>

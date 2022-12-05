@@ -8,6 +8,7 @@
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/bottom_navigation_background.xml" value="0.347" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/bottom_navigation_color.xml" value="0.3635" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/button_with_shadow.xml" value="0.3635" />
+        <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/card_price_background.xml" value="0.3625" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/circle_img_background_layer.xml" value="0.349" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/edit_text_background.xml" value="0.3635" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/grey_button_background.xml" value="0.3625" />
@@ -22,6 +23,7 @@
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/ic_round_arrow_back.xml" value="0.3635" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/ic_round_arrow_forward.xml" value="0.3635" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/ic_round_exit_to_app_24.xml" value="0.3635" />
+        <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/ic_round_location.xml" value="0.3635" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/ic_round_small_arrow_forward.xml" value="0.3635" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/ic_terms_of_use.xml" value="0.3425" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/drawable/link_text_background.xml" value="0.347" />
@@ -39,7 +41,7 @@
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/activity_splash.xml" value="0.26403641881638845" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/activity_stepper.xml" value="0.29743589743589743" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/activity_test.xml" value="0.29743589743589743" />
-        <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/recycler_view_card_items.xml" value="0.67" />
+        <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/recycler_view_card_items.xml" value="0.33" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/rv_item.xml" value="0.29743589743589743" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/layout/test_layout.xml" value="0.2965811965811966" />
         <entry key="..\:/M/Projects/Android Studio/AS PJ/GoTourApplication/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.29743589743589743" />

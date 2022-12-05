@@ -2,13 +2,15 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="2dp"
     app:cardCornerRadius="20dp"
+    android:padding="15dp"
     app:cardUseCompatPadding="true">
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="295dp"
         android:layout_height="180dp">
 
@@ -17,58 +19,102 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/image_1" />
+            android:src="@drawable/image_1"
+            android:contentDescription="@string/card_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/TitlesTextView"
-            android:layout_width="136dp"
+            style="@style/card_title_text_style"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="11dp"
-            android:layout_marginEnd="105dp"
-            android:layout_marginBottom="42dp"
-            android:gravity="start"
-            android:text="Text Is This"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:layout_marginStart="@dimen/medium_end_start_margin"
+            android:layout_marginTop="@dimen/very_large_margin"
+            android:layout_marginEnd="@dimen/medium_end_start_margin"
+            android:text="@string/image_title_string_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/ImagesCardView"
+            app:layout_constraintTop_toTopOf="@+id/ImagesCardView" />
+
 
         <TextView
             android:id="@+id/LocationsTextView"
-            android:layout_width="136dp"
-            android:layout_height="35dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="9dp"
-            android:layout_marginEnd="107dp"
-            android:layout_marginBottom="3dp"
+            style="@style/card_sub_title_text_style"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_end_start_margin"
+            android:layout_marginBottom="@dimen/medium_end_start_margin"
             android:gravity="start"
-            android:text="Text Is This"
-            android:textColor="@color/white"
-            android:textSize="13sp"
-            android:textStyle="bold" />
+            android:text="@string/image_location_string_1"
+            app:drawableStartCompat="@drawable/ic_round_location"
+            app:layout_constraintBottom_toBottomOf="@+id/ImagesCardView"
+            app:layout_constraintEnd_toEndOf="@+id/TitlesTextView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TitlesTextView" />
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/medium_end_start_margin"-->
+<!--            android:layout_marginBottom="@dimen/medium_end_start_margin"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/ImagesCardView"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/TitlesTextView"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/TitlesTextView"-->
+<!--            app:layout_constraintVertical_bias="0.0">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView6"-->
+<!--                android:layout_width="@dimen/small_icon_size"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:srcCompat="@drawable/ic_round_location" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/LocationsTextView"-->
+<!--                style="@style/card_sub_title_text_style"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="start|center"-->
+<!--                android:paddingStart="@dimen/small_bottom_margin"-->
+<!--                android:paddingEnd="0dp"-->
+<!--                android:text="@string/image_location_string_1" />-->
+<!--        </LinearLayout>-->
+
 
         <TextView
+            style="@style/card_title_text_style"
+            android:shadowRadius="0"
             android:id="@+id/PricesTextView"
-            android:layout_width="68dp"
-            android:layout_height="28dp"
+            android:layout_width="60dp"
+            android:layout_height="24dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="13dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/round_button"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/very_small_end_start_margin"
+            android:layout_marginBottom="@dimen/medium_end_start_margin"
+            android:background="@drawable/card_price_background"
+
             android:gravity="center"
             android:text="TextView"
             android:textColor="@color/white"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ImagesCardView"
+            app:layout_constraintEnd_toEndOf="@+id/ImagesCardView"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/TitlesTextView"
+            app:layout_constraintTop_toBottomOf="@+id/TitlesTextView"
+            app:layout_constraintVertical_bias="1.0" />
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_round_location" />
-    </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
