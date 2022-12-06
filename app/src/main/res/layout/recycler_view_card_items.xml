@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="2dp"
     app:cardCornerRadius="20dp"
+    android:layout_margin="2dp"
     app:cardUseCompatPadding="true">
 
 
@@ -53,6 +53,7 @@
             android:layout_marginStart="@dimen/medium_end_start_margin"
             android:layout_marginBottom="@dimen/medium_end_start_margin"
             android:gravity="start"
+            android:drawablePadding="@dimen/small_bottom_margin"
             android:text="@string/image_location_string_1"
             app:drawableStartCompat="@drawable/ic_round_location"
             app:layout_constraintBottom_toBottomOf="@+id/ImagesCardView"

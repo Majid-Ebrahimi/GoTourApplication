@@ -87,5 +87,6 @@
     <string name="card_image">Card images</string>
     <string name="best_place">Best Place</string>
     <string name="see_all">See All</string>
+    <string name="my_location">My Location</string>
 
 </resources>
