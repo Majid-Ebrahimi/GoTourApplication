@@ -10,7 +10,8 @@
     android:focusableInTouchMode="true"
     tools:context=".MainActivity">
 
-    <!--ToDo create dimen for sizes-->
+    <!--ToDone create dimen for sizes-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/MainLayout"
         android:layout_width="match_parent"
@@ -29,9 +30,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginTop="@dimen/spacing_sm_large"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="@dimen/spacing_small"
             android:background="@drawable/pressed_background_light_grey"
-            android:padding="10dp"
+            android:padding="@dimen/spacing_middle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,8 +40,8 @@
 
             <ImageView
                 android:id="@+id/ProfileButton"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="@dimen/size_mxx_large"
+                android:layout_height="@dimen/size_mxx_large"
                 android:contentDescription="@string/profile_button_description"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -99,7 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/spacing_small"
-            android:layout_marginTop="220dp"
+            android:layout_marginTop="@dimen/spacing_ultra_large"
             android:layout_marginBottom="@dimen/spacing_small"
             android:scrollbars="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -161,7 +162,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         style="@style/bottom_navigation_style"
-        android:layout_marginTop="700dp"
+        android:layout_marginTop="@dimen/spacing_xxx_ultra_large"
         app:itemIconTint="@drawable/bottom_navigation_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -210,7 +211,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="@dimen/spacing_xmmm_large"
             app:layout_constraintEnd_toEndOf="@+id/imageView5"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/imageView5"
@@ -218,8 +219,8 @@
 
             <ImageView
                 android:id="@+id/ProfileView"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="@dimen/size_mxx_large"
+                android:layout_height="@dimen/size_mxx_large"
                 android:layout_marginStart="@dimen/spacing_xx_middle"
                 android:layout_marginEnd="@dimen/spacing_xx_middle"
                 android:contentDescription="@string/profile_button_description"
@@ -246,8 +247,8 @@
             android:id="@+id/EditProfileButton"
             style="@style/button_style"
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_marginTop="140dp"
+            android:layout_height="@dimen/size_large"
+            android:layout_marginTop="@dimen/spacing_xxxm_large"
             android:text="@string/edit_profile"
             app:layout_constraintEnd_toEndOf="@+id/imageView5"
             app:layout_constraintHorizontal_bias="0.95"
@@ -278,7 +279,7 @@
             android:lineSpacingExtra="@dimen/spacing_medium"
             android:text="@string/biography_string"
             android:textColor="@color/grey_bio_color"
-            android:textSize="@dimen/text_size_middle"
+            android:textSize="@dimen/text_size_medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -302,7 +303,7 @@
         <EditText
             android:id="@+id/InputSearchMessage"
             style="@style/search_edittext_style"
-            android:layout_marginTop="164dp"
+            android:layout_marginTop="@dimen/spacing_xxxx_large"
             android:autofillHints="no"
             android:hint="@string/search_message"
             app:layout_constraintEnd_toEndOf="parent"
