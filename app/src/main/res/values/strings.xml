@@ -88,5 +88,6 @@
     <string name="best_place">Best Place</string>
     <string name="see_all">See All</string>
     <string name="my_location">My Location</string>
+    <string name="biography_string">Hello, i\'m Beginner junior Front-end Developer.\nI like create an Android App.\nI am over 3 mount\'s experience in Android Studio.</string>
 
 </resources>
