@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     LinearLayoutManager linearLayoutManager;
     sliderImageAdapter sliderImageAdapter;
 
-    class sliderImageAdapter extends RecyclerView.Adapter<sliderImageAdapter.MyHolder> {
+    public class sliderImageAdapter extends RecyclerView.Adapter<sliderImageAdapter.MyHolder> {
         ArrayList<Integer> imagesArrayList;
         ArrayList<String> titlesArrayList;
         ArrayList<String> pricesArrayList;
@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             TextView TitlesTextView;
             TextView PricesTextView;
             TextView LocationsTextView;
+
             public MyHolder(@NonNull View itemView) {
                 super(itemView);
                 ImagesCardView = itemView.findViewById(R.id.ImagesCardView);
@@ -85,6 +86,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
 
     }
+
+
     /////////////-------------------------------------------------------------------------
 
     @Override
@@ -121,6 +124,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         sliderImageAdapter = new sliderImageAdapter(imagesSource, titlesSource, pricesSource, locationsSource);
         binding.SliderImage.setLayoutManager(linearLayoutManager);
         binding.SliderImage.setAdapter(sliderImageAdapter);
+
+
+        binding.SliderImage.setClickable(true);
+
         //////////////
 
 //menu button animation and set onClick for direct to setting activity
