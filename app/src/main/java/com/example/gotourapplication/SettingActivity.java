@@ -23,8 +23,7 @@ public class SettingActivity extends AppCompatActivity {
 //back button animation and set onClick for direct to main activity
         Animation shake = AnimationUtils.loadAnimation(this,R.anim.shake_animation);
         binding.MainBackButton.setOnClickListener(view ->{
-            Intent intent = new Intent(SettingActivity.this,MainActivity.class);
-            startActivity(intent);
+            onBackPressed();
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
             binding.MainBackButton.startAnimation(shake);
         });
