@@ -54,7 +54,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/gilroy_light</item>
         <item name="android:textColor">@color/base_orange</item>
-        <item name="android:padding">@dimen/small_margin</item>
+        <item name="android:padding">@dimen/spacing_x_small</item>
         <item name="android:textSize">13sp</item>
     </style>
 

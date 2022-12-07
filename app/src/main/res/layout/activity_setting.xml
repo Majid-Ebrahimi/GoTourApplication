@@ -38,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/size_xm_large"
         android:layout_marginStart="@dimen/spacing_xx_middle"
-        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginTop="@dimen/spacing_x_small"
         android:layout_marginEnd="@dimen/spacing_xx_middle"
         android:layout_marginBottom="@dimen/spacing_mx_large"
         android:drawableStart="@drawable/ic_exit"
