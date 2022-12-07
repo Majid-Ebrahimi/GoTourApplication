@@ -36,11 +36,11 @@
         android:id="@+id/LogOutButton"
         style="@style/button_style"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/widget_height"
-        android:layout_marginStart="@dimen/medium_end_start_margin"
+        android:layout_height="@dimen/size_xm_large"
+        android:layout_marginStart="@dimen/spacing_xx_middle"
         android:layout_marginTop="@dimen/small_margin"
-        android:layout_marginEnd="@dimen/medium_end_start_margin"
-        android:layout_marginBottom="@dimen/medium_top_bottom_margin"
+        android:layout_marginEnd="@dimen/spacing_xx_middle"
+        android:layout_marginBottom="@dimen/spacing_mx_large"
         android:drawableStart="@drawable/ic_exit"
         android:drawablePadding="-120dp"
         android:paddingStart="120dp"
@@ -83,8 +83,8 @@
                 android:id="@+id/ProfileButton"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="@dimen/medium_end_start_margin"
-                android:layout_marginEnd="@dimen/medium_end_start_margin"
+                android:layout_marginStart="@dimen/spacing_xx_middle"
+                android:layout_marginEnd="@dimen/spacing_xx_middle"
                 android:contentDescription="@string/profile_button_description"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -137,7 +137,7 @@
             android:paddingStart="0dp"
             android:clickable="true"
             android:focusable="true"
-            android:paddingEnd="@dimen/medium_end_start_margin"
+            android:paddingEnd="@dimen/spacing_xx_middle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -150,33 +150,33 @@
         style="@style/setting_menu_style"
         android:layout_height="200dp"
         android:orientation="vertical"
-        android:paddingHorizontal="@dimen/medium_end_start_margin"
-        android:paddingVertical="@dimen/layout_padding"
+        android:paddingHorizontal="@dimen/spacing_xx_middle"
+        android:paddingVertical="@dimen/spacing_large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/GoToProfileLayout">
 
         <TextView
             android:id="@+id/textView3"
-            android:paddingStart="@dimen/medium_padding"
+            android:paddingStart="@dimen/spacing_middle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/linear_layout_title_style"
-            android:layout_marginBottom="@dimen/medium_end_start_margin"
+            android:layout_marginBottom="@dimen/spacing_xx_middle"
             android:text="@string/preference" />
 
         <LinearLayout
             android:id="@+id/Notification"
             android:layout_width="match_parent"
             android:background="@drawable/grey_button_background"
-            android:layout_height="@dimen/small_size_2"
-            android:layout_marginBottom="@dimen/small_bottom_margin"
+            android:layout_height="@dimen/size_mx_large"
+            android:layout_marginBottom="@dimen/spacing_small"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="@dimen/very_small_icon_size"
-                android:layout_height="@dimen/small_size"
+                android:layout_width="@dimen/size_small"
+                android:layout_height="@dimen/size_large"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/ic_notification" />
@@ -186,10 +186,10 @@
                 android:layout_width="236dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:paddingStart="@dimen/medium_padding"
+                android:paddingStart="@dimen/spacing_middle"
                 android:paddingEnd="0dp"
                 android:gravity="center_vertical"
-                android:textSize="@dimen/small_text_size"
+                android:textSize="@dimen/text_size_middle"
                 style="@style/sub_title_style"
                 android:text="@string/notification" />
 
@@ -211,15 +211,15 @@
         <LinearLayout
             android:id="@+id/Language"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/small_size_2"
+            android:layout_height="@dimen/size_mx_large"
             android:background="@drawable/grey_button_background"
-            android:layout_marginBottom="@dimen/small_bottom_margin"
+            android:layout_marginBottom="@dimen/spacing_small"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="@dimen/very_small_icon_size"
-                android:layout_height="@dimen/small_size"
+                android:layout_width="@dimen/size_small"
+                android:layout_height="@dimen/size_large"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/ic_language" />
@@ -229,11 +229,11 @@
                 android:layout_width="236dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:paddingStart="@dimen/medium_padding"
+                android:paddingStart="@dimen/spacing_middle"
                 android:paddingEnd="0dp"
                 android:gravity="center_vertical"
                 style="@style/sub_title_style"
-                android:textSize="@dimen/small_text_size"
+                android:textSize="@dimen/text_size_middle"
                 android:text="@string/language" />
 
             <Button
@@ -254,15 +254,15 @@
         <LinearLayout
             android:id="@+id/Currency"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/small_size_2"
+            android:layout_height="@dimen/size_mx_large"
             android:background="@drawable/grey_button_background"
-            android:layout_marginBottom="@dimen/small_bottom_margin"
+            android:layout_marginBottom="@dimen/spacing_small"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="@dimen/very_small_icon_size"
-                android:layout_height="@dimen/small_size"
+                android:layout_width="@dimen/size_small"
+                android:layout_height="@dimen/size_large"
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/ic_currency" />
@@ -273,10 +273,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:paddingStart="@dimen/medium_padding"
+                android:paddingStart="@dimen/spacing_middle"
                 android:paddingEnd="0dp"
                 style="@style/sub_title_style"
-                android:textSize="@dimen/small_text_size"
+                android:textSize="@dimen/text_size_middle"
                 android:text="@string/currency" />
 
             <Button
@@ -301,33 +301,33 @@
         style="@style/setting_menu_style"
         android:layout_height="200dp"
         android:orientation="vertical"
-        android:paddingHorizontal="@dimen/medium_end_start_margin"
-        android:paddingVertical="@dimen/layout_padding"
+        android:paddingHorizontal="@dimen/spacing_xx_middle"
+        android:paddingVertical="@dimen/spacing_large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
             android:id="@+id/textView8"
-            android:paddingStart="@dimen/medium_padding"
+            android:paddingStart="@dimen/spacing_middle"
             style="@style/linear_layout_title_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/medium_end_start_margin"
+            android:layout_marginBottom="@dimen/spacing_xx_middle"
             android:text="@string/banking_38_payment" />
 
         <LinearLayout
             android:id="@+id/PaymentMethod"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/small_size_2"
+            android:layout_height="@dimen/size_mx_large"
             android:background="@drawable/grey_button_background"
-            android:layout_marginBottom="@dimen/small_bottom_margin"
+            android:layout_marginBottom="@dimen/spacing_small"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="@dimen/very_small_icon_size"
-                android:layout_height="@dimen/small_size"
+                android:layout_width="@dimen/size_small"
+                android:layout_height="@dimen/size_large"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/ic_payment_method" />
@@ -338,10 +338,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:paddingStart="@dimen/medium_padding"
+                android:paddingStart="@dimen/spacing_middle"
                 android:paddingEnd="0dp"
                 style="@style/sub_title_style"
-                android:textSize="@dimen/small_text_size"
+                android:textSize="@dimen/text_size_middle"
                 android:text="@string/payment_method" />
 
             <Button
@@ -362,15 +362,15 @@
         <LinearLayout
             android:id="@+id/PrivacyPolicy"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/small_size_2"
+            android:layout_height="@dimen/size_mx_large"
             android:background="@drawable/grey_button_background"
-            android:layout_marginBottom="@dimen/small_bottom_margin"
+            android:layout_marginBottom="@dimen/spacing_small"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView44"
-                android:layout_width="@dimen/very_small_icon_size"
-                android:layout_height="@dimen/small_size"
+                android:layout_width="@dimen/size_small"
+                android:layout_height="@dimen/size_large"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/ic_privacy_policy" />
@@ -382,9 +382,9 @@
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 style="@style/sub_title_style"
-                android:paddingStart="@dimen/medium_padding"
+                android:paddingStart="@dimen/spacing_middle"
                 android:paddingEnd="0dp"
-                android:textSize="@dimen/small_text_size"
+                android:textSize="@dimen/text_size_middle"
                 android:text="@string/privacy_policy" />
 
             <Button
@@ -406,14 +406,14 @@
             android:id="@+id/TermsOfUse"
             android:layout_width="match_parent"
             android:background="@drawable/grey_button_background"
-            android:layout_height="@dimen/small_size_2"
-            android:layout_marginBottom="@dimen/small_bottom_margin"
+            android:layout_height="@dimen/size_mx_large"
+            android:layout_marginBottom="@dimen/spacing_small"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView773"
-                android:layout_width="@dimen/very_small_icon_size"
-                android:layout_height="@dimen/small_size"
+                android:layout_width="@dimen/size_small"
+                android:layout_height="@dimen/size_large"
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/ic_terms_of_use" />
@@ -424,10 +424,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:paddingStart="@dimen/medium_padding"
+                android:paddingStart="@dimen/spacing_middle"
                 android:paddingEnd="0dp"
                 style="@style/sub_title_style"
-                android:textSize="@dimen/small_text_size"
+                android:textSize="@dimen/text_size_middle"
                 android:text="@string/terms_of_use" />
 
             <Button

@@ -1,43 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="small_wh">1dp</dimen>
+    <!--general size-->
+    <dimen name="size_xx_small">1dp</dimen><!-- ToDo -->
+    <dimen name="size_small">5dp</dimen><!-- ToDo -->
+    <dimen name="size_x_medium">10dp</dimen><!-- ToDo -->
+    <dimen name="size_middle">12dp</dimen><!-- ToDo -->
+    <dimen name="size_large">25dp</dimen><!-- ToDo -->
+    <dimen name="size_mx_large">35dp</dimen><!-- ToDo -->
+    <dimen name="size_x_large">40dp</dimen><!-- ToDo -->
+    <dimen name="size_xm_large">45dp</dimen><!-- ToDo -->
 
-    <dimen name="small_margin">4dp</dimen>
-    <dimen name="link_text_padding">4dp</dimen>
+    <!--general radius-->
+    <dimen name="radius_x_medium">8dp</dimen><!-- ToDo -->
+    <dimen name="radius_middle">10dp</dimen><!-- ToDo -->
+    <dimen name="radius_large">15dp</dimen><!-- ToDo -->
 
-    <dimen name="very_small_icon_size">5dp</dimen>
-    <dimen name="small_bottom_margin">5dp</dimen>
+    <!--general text size-->
+    <dimen name="text_size_middle">13sp</dimen><!-- ToDo -->
 
-    <dimen name="small_radius">8dp</dimen>
+    <!--general spacing-->
+    <dimen name="spacing_x_small">4dp</dimen><!-- ToDo -->
+    <dimen name="spacing_small">5dp</dimen><!-- ToDo -->
+    <dimen name="spacing_medium">7dp</dimen><!-- ToDo -->
+    <dimen name="spacing_middle">10dp</dimen><!-- ToDo -->
+    <dimen name="spacing_x_middle">13dp</dimen><!-- ToDo -->
+    <dimen name="spacing_xx_middle">15dp</dimen><!-- ToDo -->
+    <dimen name="spacing_xxx_middle">20dp</dimen><!-- ToDo -->
+    <dimen name="spacing_large">25dp</dimen><!-- ToDo -->
+    <dimen name="spacing_sm_large">30dp</dimen><!-- ToDo -->
+    <dimen name="spacing_m_large">40dp</dimen><!-- ToDo -->
+    <dimen name="spacing_mx_large">50dp</dimen><!-- ToDo -->
+    <dimen name="spacing_x_large">70dp</dimen><!-- ToDo -->
+    <dimen name="spacing_xm_large">90dp</dimen><!-- ToDo -->
+    <dimen name="spacing_xx_large">110dp</dimen><!-- ToDo -->
+    <dimen name="spacing_xxx_large">120dp</dimen><!-- ToDo -->
 
-    <dimen name="normal_radius">10dp</dimen>
-    <dimen name="very_small_end_start_margin">10dp</dimen>
-    <dimen name="online_status">10dp</dimen>
-    <dimen name="medium_padding">10dp</dimen>
-
-    <dimen name="small_icon_size">12dp</dimen>
-
-    <dimen name="widget_padding">13dp</dimen>
-    <dimen name="small_text_size">13sp</dimen>
-
-    <dimen name="medium_end_start_margin">15dp</dimen>
-    <dimen name="medium_radius">15dp</dimen>
-
-    <dimen name="large_end_start_margin">20dp</dimen>
-
-    <dimen name="layout_padding">25dp</dimen>
-    <dimen name="small_size">25dp</dimen>
-
-    <dimen name="top_margin">30dp</dimen>
-    <dimen name="small_size_2">35dp</dimen>
-
-    <dimen name="medium_margin">40dp</dimen>
-    <dimen name="medium_size">40dp</dimen>
-
-    <dimen name="widget_height">45dp</dimen>
-    <dimen name="medium_top_bottom_margin">50dp</dimen>
-    <dimen name="large_margin">70dp</dimen>
-    <dimen name="large_margin_bottom">90dp</dimen>
-    <dimen name="very_large_top_margin">110dp</dimen>
-    <dimen name="very_large_margin">120dp</dimen>
 </resources>

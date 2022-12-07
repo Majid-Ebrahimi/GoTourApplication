@@ -54,14 +54,14 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/gilroy_light</item>
         <item name="android:textColor">@color/base_orange</item>
-        <item name="android:padding">@dimen/link_text_padding</item>
+        <item name="android:padding">@dimen/small_margin</item>
         <item name="android:textSize">13sp</item>
     </style>
 
     <style name="button_style" parent="sub_title_style">
         <item name="android:background">@drawable/round_button</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:layout_height">@dimen/widget_height</item>
+        <item name="android:layout_height">@dimen/size_xm_large</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">16sp</item>
         <item name="fontFamily">@font/gilroy_bold</item>
@@ -70,7 +70,7 @@
     <style name="button_with_shadow_style">
         <item name="android:background">@drawable/button_with_shadow</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:layout_height">@dimen/widget_height</item>
+        <item name="android:layout_height">@dimen/size_xm_large</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">16sp</item>
         <item name="fontFamily">@font/gilroy_bold</item>
@@ -105,19 +105,19 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">18sp</item>
         <item name="android:gravity">start</item>
-        <item name="android:layout_marginEnd">@dimen/medium_end_start_margin</item>
-        <item name="android:layout_marginStart">@dimen/medium_end_start_margin</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_xx_middle</item>
+        <item name="android:layout_marginStart">@dimen/spacing_xx_middle</item>
 
     </style>
 
     <style name="edittext_style">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/widget_height</item>
-        <item name="android:layout_marginStart">@dimen/medium_end_start_margin</item>
-        <item name="android:layout_marginEnd">@dimen/medium_end_start_margin</item>
+        <item name="android:layout_height">@dimen/size_xm_large</item>
+        <item name="android:layout_marginStart">@dimen/spacing_xx_middle</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_xx_middle</item>
         <item name="android:background">@drawable/edit_text_background</item>
         <item name="android:fontFamily">@font/gilroy_light</item>
-        <item name="android:padding">@dimen/widget_padding</item>
+        <item name="android:padding">@dimen/spacing_x_middle</item>
         <item name="android:textCursorDrawable">@drawable/cursor</item>
         <item name="android:textSelectHandle">@drawable/ic_text_select_handle</item>
         <item name="android:textSelectHandleLeft">@drawable/ic_text_select_handle_left</item>
@@ -148,17 +148,17 @@
     </style>
 
     <style name="online_status">
-        <item name="android:layout_width">@dimen/online_status</item>
-        <item name="android:layout_height">@dimen/online_status</item>
+        <item name="android:layout_width">@dimen/size_x_medium</item>
+        <item name="android:layout_height">@dimen/size_x_medium</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:background">@drawable/ic_active_status</item>
     </style>
 
     <style name="search_button_style" parent="button_style">
-        <item name="android:layout_width">@dimen/widget_height</item>
-        <item name="android:layout_marginStart">@dimen/medium_end_start_margin</item>
-        <item name="android:layout_marginTop">@dimen/medium_margin</item>
-        <item name="android:layout_marginEnd">@dimen/medium_end_start_margin</item>
+        <item name="android:layout_width">@dimen/size_xm_large</item>
+        <item name="android:layout_marginStart">@dimen/spacing_xx_middle</item>
+        <item name="android:layout_marginTop">@dimen/spacing_m_large</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_xx_middle</item>
         <item name="android:contentDescription">@string/search_button_description</item>
         <item name="android:foreground">@drawable/ic_search</item>
         <item name="android:foregroundGravity">center</item>
@@ -166,28 +166,28 @@
 
     <style name="search_edittext_style" parent="edittext_style">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_marginStart">@dimen/medium_end_start_margin</item>
-        <item name="android:layout_marginTop">@dimen/medium_margin</item>
-        <item name="android:layout_marginEnd">@dimen/medium_end_start_margin</item>
+        <item name="android:layout_marginStart">@dimen/spacing_xx_middle</item>
+        <item name="android:layout_marginTop">@dimen/spacing_m_large</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_xx_middle</item>
         <item name="android:ems">10</item>
         <item name="android:inputType">text</item>
     </style>
 
     <style name="bottom_navigation_style">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/widget_height</item>
-        <item name="android:layout_marginTop">@dimen/top_margin</item>
-        <item name="android:layout_marginStart">@dimen/medium_end_start_margin</item>
-        <item name="android:layout_marginEnd">@dimen/medium_end_start_margin</item>
-        <item name="android:layout_marginBottom">@dimen/medium_margin</item>
+        <item name="android:layout_height">@dimen/size_xm_large</item>
+        <item name="android:layout_marginTop">@dimen/spacing_sm_large</item>
+        <item name="android:layout_marginStart">@dimen/spacing_xx_middle</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_xx_middle</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_m_large</item>
         <item name="android:background">@drawable/bottom_navigation_background</item>
     </style>
 
     <style name="main_back_button_style">
-        <item name="android:layout_width">@dimen/medium_size</item>
-        <item name="android:layout_height">@dimen/medium_size</item>
-        <item name="android:layout_marginStart">@dimen/medium_end_start_margin</item>
-        <item name="android:layout_marginTop">@dimen/medium_margin</item>
+        <item name="android:layout_width">@dimen/size_x_large</item>
+        <item name="android:layout_height">@dimen/size_x_large</item>
+        <item name="android:layout_marginStart">@dimen/spacing_xx_middle</item>
+        <item name="android:layout_marginTop">@dimen/spacing_m_large</item>
         <item name="android:background">@drawable/pressed_background_light_grey</item>
         <item name="android:drawableEnd">@drawable/ic_round_arrow_back</item>
         <item name="android:paddingStart">0dp</item>
@@ -197,7 +197,7 @@
 
     <style name="forward_button_style">
         <item name="android:layout_width">48dp</item>
-        <item name="android:layout_height">@dimen/medium_size</item>
+        <item name="android:layout_height">@dimen/size_x_large</item>
         <item name="android:drawableEnd">@drawable/ic_round_arrow_forward</item>
         <item name="android:background">@drawable/forward_setting_menu_background</item>
         <item name="android:paddingStart">0dp</item>
@@ -206,8 +206,8 @@
     </style>
 
     <style name="small_forward_button_style">
-        <item name="android:layout_width">@dimen/medium_size</item>
-        <item name="android:layout_height">@dimen/medium_size</item>
+        <item name="android:layout_width">@dimen/size_x_large</item>
+        <item name="android:layout_height">@dimen/size_x_large</item>
         <item name="android:drawableEnd">@drawable/ic_round_small_arrow_forward</item>
         <item name="android:background">@drawable/forward_setting_menu_background</item>
         <item name="android:contentDescription">@string/forward_button_description</item>
@@ -216,15 +216,15 @@
     <style name="main_title_style" parent="title_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">@dimen/medium_margin</item>
+        <item name="android:layout_marginTop">@dimen/spacing_m_large</item>
         <item name="android:textSize">26sp</item>
     </style>
 
     <style name="setting_menu_style">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_marginStart">@dimen/medium_end_start_margin</item>
-        <item name="android:layout_marginTop">@dimen/top_margin</item>
-        <item name="android:layout_marginEnd">@dimen/medium_end_start_margin</item>
+        <item name="android:layout_marginStart">@dimen/spacing_xx_middle</item>
+        <item name="android:layout_marginTop">@dimen/spacing_sm_large</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_xx_middle</item>
         <item name="android:background">@drawable/grey_button_background</item>
     </style>
 

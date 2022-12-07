@@ -5,7 +5,7 @@
             <solid android:color="@color/pressed_background_color_orange"/>
             <stroke android:width="2dp"
                 android:color="@color/base_orange"/>
-            <corners android:radius="@dimen/small_radius"/>
+            <corners android:radius="@dimen/radius_x_medium"/>
         </shape>
     </item>
     <item android:state_enabled="true" android:state_focused="false" android:state_checked="false">
@@ -13,7 +13,7 @@
             <solid android:color="@color/white"/>
             <stroke android:width="2dp"
                 android:color="@color/base_normal_grey"/>
-            <corners android:radius="@dimen/small_radius"/>
+            <corners android:radius="@dimen/radius_x_medium"/>
         </shape>
     </item>
     <item android:state_enabled="true" android:state_focused="false" android:state_checked="true">
@@ -21,7 +21,7 @@
             <solid android:color="@color/white"/>
             <stroke android:width="2dp"
                 android:color="@color/base_orange"/>
-            <corners android:radius="@dimen/small_radius"/>
+            <corners android:radius="@dimen/radius_x_medium"/>
         </shape>
     </item>
     <item android:state_enabled="true" android:state_focused="true" >
@@ -29,7 +29,7 @@
             <solid android:color="@color/white"/>
             <stroke android:width="2dp"
                 android:color="@color/base_orange"/>
-            <corners android:radius="@dimen/small_radius"/>
+            <corners android:radius="@dimen/radius_x_medium"/>
         </shape>
     </item>
 </selector>

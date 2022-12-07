@@ -10,7 +10,7 @@
             android:shape="rectangle">
             <!-- Button Color -->
             <solid android:color="@color/light_base_grey" />
-            <corners android:radius="@dimen/normal_radius" />
+            <corners android:radius="@dimen/radius_middle" />
         </shape>
     </item>
 </layer-list>
