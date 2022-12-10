@@ -272,7 +272,7 @@
             android:id="@+id/BioGraphi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/spacing_xx_middle"
+            android:layout_marginStart="@dimen/spacing_xxx_middle"
             android:layout_marginTop="@dimen/spacing_xx_middle"
             android:layout_marginEnd="@dimen/spacing_xx_middle"
             android:fontFamily="@font/gilroy_light"
