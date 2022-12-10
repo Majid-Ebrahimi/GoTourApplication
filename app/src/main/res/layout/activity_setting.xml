@@ -106,7 +106,7 @@
 
         <LinearLayout
             android:layout_width="@dimen/size_xxxx_large"
-            android:layout_height="@dimen/size_xmm_large"
+            android:layout_height="@dimen/size_xm_large"
             android:layout_gravity="center_vertical"
             android:orientation="vertical">
 
