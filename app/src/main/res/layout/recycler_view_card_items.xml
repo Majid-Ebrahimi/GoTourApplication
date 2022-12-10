@@ -5,12 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="20dp"
-    android:layout_margin="2dp"
+    app:cardCornerRadius="@dimen/radius_x_large"
+    android:layout_margin="@dimen/spacing_xxx_small"
     app:cardUseCompatPadding="true">
 
 
     <!--TODO Fix everyThing about this card view-->
+    <!--ToDone dimen-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="295dp"
         android:layout_height="180dp">
@@ -48,7 +49,7 @@
         <TextView
             android:id="@+id/LocationsTextView"
             style="@style/card_sub_title_text_style"
-            android:layout_width="200dp"
+            android:layout_width="@dimen/size_xxxx_large"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/spacing_xx_middle"
             android:layout_marginBottom="@dimen/spacing_xx_middle"
@@ -66,9 +67,9 @@
         <TextView
             android:id="@+id/PricesTextView"
             style="@style/card_title_text_style"
-            android:layout_width="60dp"
-            android:layout_height="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="@dimen/size_mxx_large"
+            android:layout_height="@dimen/size_m_large"
+            android:layout_marginTop="@dimen/spacing_x_medium"
             android:layout_marginEnd="@dimen/spacing_middle"
             android:layout_marginBottom="@dimen/spacing_xx_middle"
             android:background="@drawable/card_price_background"
@@ -76,7 +77,7 @@
             android:shadowRadius="0"
             android:text="@string/image_prices_1"
             android:textColor="@color/white"
-            android:textSize="11sp"
+            android:textSize="@dimen/text_size_small"
             app:layout_constraintBottom_toBottomOf="@+id/ImagesCardView"
             app:layout_constraintEnd_toEndOf="@+id/ImagesCardView"
             app:layout_constraintHorizontal_bias="1.0"

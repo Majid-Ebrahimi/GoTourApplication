@@ -5,6 +5,7 @@
     <dimen name="size_small">5dp</dimen> <!-- ToDo -->
     <dimen name="size_x_medium">10dp</dimen> <!-- ToDo -->
     <dimen name="size_middle">12dp</dimen> <!-- ToDo -->
+    <dimen name="size_m_large">24dp</dimen> <!-- ToDo -->
     <dimen name="size_large">25dp</dimen> <!-- ToDo -->
     <dimen name="size_mx_large">35dp</dimen> <!-- ToDo -->
     <dimen name="size_x_large">40dp</dimen> <!-- ToDo -->
@@ -20,16 +21,23 @@
     <dimen name="radius_x_medium">8dp</dimen> <!-- ToDo -->
     <dimen name="radius_middle">10dp</dimen> <!-- ToDo -->
     <dimen name="radius_large">15dp</dimen> <!-- ToDo -->
+    <dimen name="radius_x_large">20dp</dimen> <!-- ToDo -->
+
 
     <!--general text size-->
+    <dimen name="text_size_small">11sp</dimen> <!-- ToDo -->
     <dimen name="text_size_medium">13sp</dimen> <!-- ToDo -->
     <dimen name="text_size_middle">16sp</dimen> <!-- ToDo -->
     <dimen name="text_size_large">30sp</dimen> <!-- ToDo -->
+    <dimen name="text_size_x_large">42sp</dimen> <!-- ToDo -->
+
 
 
     <!--general spacing-->
     <dimen name="spacing_negative_x_large">-120dp</dimen>
     <dimen name="spacing_negative_large">-90dp</dimen>
+    <dimen name="spacing_xxx_small">2dp</dimen> <!--ToDo-->
+    <dimen name="spacing_xx_small">3dp</dimen> <!--ToDo-->
     <dimen name="spacing_x_small">4dp</dimen> <!--ToDo-->
     <dimen name="spacing_small">5dp</dimen> <!-- ToDo -->
     <dimen name="spacing_medium">7dp</dimen> <!-- ToDo -->
@@ -41,6 +49,7 @@
     <dimen name="spacing_large">25dp</dimen> <!-- ToDo -->
     <dimen name="spacing_sm_large">30dp</dimen> <!-- ToDo -->
     <dimen name="spacing_m_large">40dp</dimen> <!-- ToDo -->
+    <dimen name="spacing_mmx_large">44dp</dimen> <!-- ToDo -->
     <dimen name="spacing_mx_large">50dp</dimen> <!-- ToDo -->
     <dimen name="spacing_x_large">70dp</dimen> <!-- ToDo -->
     <dimen name="spacing_xm_large">90dp</dimen> <!-- ToDo -->
@@ -51,6 +60,7 @@
     <dimen name="spacing_xxxm_large">140dp</dimen> <!--ToDo-->
     <dimen name="spacing_xxxx_large">150dp</dimen> <!--ToDo-->
     <dimen name="spacing_ultra_large">220dp</dimen> <!--ToDo-->
+    <dimen name="spacing_x_ultra_large">550dp</dimen> <!--ToDo-->
     <dimen name="spacing_xxx_ultra_large">700dp</dimen> <!--ToDo-->
 
 

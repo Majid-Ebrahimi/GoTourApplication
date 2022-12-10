@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:id="@+id/ActivitySplash">
 
+    <!--ToDone dimens-->
+
     <ImageView
         android:id="@+id/SplashImage"
         android:layout_width="663dp"
@@ -26,9 +28,9 @@
         style="@style/title_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/spacing_x_medium"
         android:text="@string/enjoy_your_traveling"
-        android:textSize="16sp"
+        android:textSize="@dimen/text_size_middle"
         app:layout_constraintEnd_toEndOf="@+id/GoTourLogo"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/GoTourLogo"

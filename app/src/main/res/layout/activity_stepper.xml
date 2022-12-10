@@ -9,6 +9,8 @@
     tools:context=".StepperActivity"
     android:id="@+id/ActivityStepper">
 
+    <!--ToDone dimens-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -38,7 +40,7 @@
             android:layout_marginStart="@dimen/spacing_xx_middle"
             android:layout_marginEnd="@dimen/spacing_xx_middle"
             android:layout_marginBottom="@dimen/spacing_mx_large"
-            android:background="#FFFFFF"
+            android:background="@color/white"
             android:baselineAligned="false"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -81,7 +83,7 @@
                 style="@style/button_style"
                 android:layout_width="match_parent"
                 android:layout_gravity="top"
-                android:layout_marginStart="3dp"
+                android:layout_marginStart="@dimen/spacing_xx_small"
                 android:text="@string/log_in_now"
                 android:visibility="gone"
                 tools:ignore="TouchTargetSizeCheck" />
@@ -92,9 +94,9 @@
             android:id="@+id/StepperTitle"
             style="@style/title_style"
             android:layout_marginStart="@dimen/spacing_xx_middle"
-            android:layout_marginTop="550dp"
+            android:layout_marginTop="@dimen/spacing_x_ultra_large"
             android:text="@string/title"
-            android:textSize="42sp"
+            android:textSize="@dimen/text_size_x_large"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -104,8 +106,8 @@
             android:id="@+id/StepperSubTitle"
             style="@style/sub_title_style"
             android:layout_marginStart="@dimen/spacing_xx_middle"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:layout_marginBottom="@dimen/spacing_xxx_middle"
             android:text="@string/sub_title"
             app:layout_constraintBottom_toTopOf="@+id/StepperNavigation"
             app:layout_constraintEnd_toEndOf="parent"
