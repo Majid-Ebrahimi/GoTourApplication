@@ -24,7 +24,7 @@
 
 
     <Button
-        android:id="@+id/MainBackButton"
+        android:id="@+id/SettingBackButton"
         style="@style/main_back_button_style"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

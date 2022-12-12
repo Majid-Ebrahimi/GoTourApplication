@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/radius_x_large"
+    android:layout_margin="@dimen/spacing_xxx_small"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="295dp"
+        android:layout_height="150dp"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/CardTypeTV"
+            style="@style/sub_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_xx_middle"
+            android:layout_marginTop="@dimen/spacing_xxx_middle"
+            android:layout_marginEnd="@dimen/spacing_xx_middle"
+            android:text="@string/saman_card"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/LogoIV"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/CardNumberTV"
+            style="@style/card_title_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_xx_middle"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="@dimen/spacing_xx_middle"
+            android:includeFontPadding="false"
+            android:shadowRadius="0"
+            android:text="@string/card_number_string"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CardTypeTV" />
+
+        <TextView
+            android:id="@+id/CardBalanceTV"
+            style="@style/card_title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_xx_middle"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="@dimen/spacing_xx_middle"
+            android:shadowRadius="0"
+            android:text="@string/card_balance"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/CardNameTV"
+            style="@style/sub_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_xx_middle"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:layout_marginEnd="@dimen/spacing_xx_middle"
+            android:layout_marginBottom="@dimen/spacing_xx_middle"
+            android:text="@string/sample_name_string"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/EXPDateTV"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CardBalanceTV"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/EXPDateTV"
+            style="@style/sub_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_xx_middle"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="@dimen/spacing_xx_middle"
+            android:layout_marginBottom="@dimen/spacing_xx_middle"
+            android:text="@string/exp_date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LogoIV"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/LogoIV"
+            android:layout_width="@dimen/size_mx_large"
+            android:layout_height="@dimen/size_mx_large"
+            android:layout_marginStart="@dimen/spacing_xx_middle"
+            android:layout_marginTop="@dimen/spacing_xx_middle"
+            android:layout_marginEnd="@dimen/spacing_xx_middle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck"
+            tools:srcCompat="@drawable/ic_card_logo"
+            android:contentDescription="@string/cardlogo_content_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
@@ -22,10 +21,10 @@ public class SettingActivity extends AppCompatActivity {
 
 //back button animation and set onClick for direct to main activity
         Animation shake = AnimationUtils.loadAnimation(this,R.anim.shake_animation);
-        binding.MainBackButton.setOnClickListener(view ->{
+        binding.SettingBackButton.setOnClickListener(view ->{
             onBackPressed();
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
-            binding.MainBackButton.startAnimation(shake);
+            binding.SettingBackButton.startAnimation(shake);
         });
 //
 //Back To Profile Button Todo: write a better comment
@@ -35,6 +34,8 @@ public class SettingActivity extends AppCompatActivity {
             intent.putExtra("ProfileStatus",1);
             intent.putExtra("BottomNavigationStatus",4);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+
         });
 //
 //Back To Profile Button Todo: write a better comment
@@ -43,6 +44,8 @@ public class SettingActivity extends AppCompatActivity {
             intent.putExtra("ProfileStatus",1);
             intent.putExtra("BottomNavigationStatus",4);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+
         });
 //
 //Notification Button Todo: write a better comment
@@ -55,7 +58,17 @@ public class SettingActivity extends AppCompatActivity {
         binding.Currency.setOnClickListener(null);
 //
 //PaymentMethod Button Todo: write a better comment
-        binding.PaymentMethod.setOnClickListener(null);
+        binding.PaymentMethod.setOnClickListener(View ->{
+            Intent pIntent = new Intent(SettingActivity.this, PaymentMethodActivity.class);
+            startActivity(pIntent);
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+        });
+        binding.forwardButton5.setOnClickListener(View ->{
+            Intent pIntent = new Intent(SettingActivity.this, PaymentMethodActivity.class);
+            startActivity(pIntent);
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+        });
+
 //
 //PrivacyPolicy Button Todo: write a better comment
         binding.PrivacyPolicy.setOnClickListener(null);

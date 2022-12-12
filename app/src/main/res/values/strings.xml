@@ -89,6 +89,11 @@
     <string name="see_all">See All</string>
     <string name="my_location">My Location</string>
     <string name="biography_string">Hello, i\'m Beginner junior Front-end Developer.\nI like create an Android App.\nI am over 3 mount\'s experience in Android Studio.</string>
-    <string name="search_message">Search Message...</string>
+    <string name="search_message">Search Message…</string>
+    <string name="saman_card">Saman Card</string>
+    <string name="card_number_string">6219\t\t\t8619\t\t\t1542\t\t\t0789</string>
+    <string name="cardlogo_content_description">CardLogo content Description</string>
+    <string name="exp_date">Exp Date \n\t\t7/21</string>
+    <string name="card_balance">$10 000</string>
 
 </resources>
