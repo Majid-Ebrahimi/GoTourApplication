@@ -19,6 +19,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.gotourapplication.Adapter.SliderImageAdapter;
 import com.example.gotourapplication.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -35,60 +36,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     ArrayList<String> locationsSource;
 
     LinearLayoutManager linearLayoutManager;
-    sliderImageAdapter sliderImageAdapter;
-
-    public class sliderImageAdapter extends RecyclerView.Adapter<sliderImageAdapter.MyHolder> {
-        ArrayList<Integer> imagesArrayList;
-        ArrayList<String> titlesArrayList;
-        ArrayList<String> pricesArrayList;
-        ArrayList<String> locationsArrayList;
-
-        public sliderImageAdapter(ArrayList<Integer> imagesArrayList, ArrayList<String> titlesArrayList, ArrayList<String> pricesArrayList, ArrayList<String> locationsArrayList) {
-            this.imagesArrayList = imagesArrayList;
-            this.titlesArrayList = titlesArrayList;
-            this.pricesArrayList = pricesArrayList;
-            this.locationsArrayList = locationsArrayList;
-        }
-
-        @NonNull
-        @Override
-        public MyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.recycler_view_card_items, parent, false);
-            return new MyHolder(view);
-        }
-
-        @Override
-        public void onBindViewHolder(@NonNull MyHolder holder, int position) {
-            holder.ImagesCardView.setImageResource(imagesArrayList.get(position));
-            holder.TitlesTextView.setText(titlesArrayList.get(position));
-            holder.PricesTextView.setText(pricesArrayList.get(position));
-            holder.LocationsTextView.setText(locationsArrayList.get(position));
-        }
-
-        @Override
-        public int getItemCount() {
-            return imagesArrayList.size();
-        }
-
-        class MyHolder extends RecyclerView.ViewHolder {
-            ImageView ImagesCardView;
-            TextView TitlesTextView;
-            TextView PricesTextView;
-            TextView LocationsTextView;
-
-            public MyHolder(@NonNull View itemView) {
-                super(itemView);
-                ImagesCardView = itemView.findViewById(R.id.ImagesCardView);
-                TitlesTextView = itemView.findViewById(R.id.TitlesTextView);
-                PricesTextView = itemView.findViewById(R.id.PricesTextView);
-                LocationsTextView = itemView.findViewById(R.id.LocationsTextView);
-            }
-        }
-
-    }
-
-
-    /////////////-------------------------------------------------------------------------
+    SliderImageAdapter sliderImageAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,8 +46,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         setContentView(binding.getRoot());
 //
 ////////////////TODO RecyclerView    --  -- ---- -- -- -- --- --- --- -- --- -- ---- --- ---
-        //Setting the data source
-
 //        dataSource = new ArrayList(Arrays.asList(getResources().getStringArray(R.array.images)));
 
         imagesSource = new ArrayList<>();
@@ -121,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         locationsSource = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.images_location)));
 
         linearLayoutManager = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false);
-        sliderImageAdapter = new sliderImageAdapter(imagesSource, titlesSource, pricesSource, locationsSource);
+        sliderImageAdapter = new SliderImageAdapter(imagesSource, titlesSource, pricesSource, locationsSource);
         binding.SliderImage.setLayoutManager(linearLayoutManager);
         binding.SliderImage.setAdapter(sliderImageAdapter);
 
